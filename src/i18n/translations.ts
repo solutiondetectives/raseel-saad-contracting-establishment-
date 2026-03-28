@@ -1,0 +1,193 @@
+export const translations = {
+  en: {
+    nav: {
+      home: "Home",
+      services: "Services",
+      gallery: "Gallery",
+      about: "About Us",
+      contact: "Contact",
+      callNow: "Call Now",
+    },
+    hero: {
+      title: "Premium Surface Polishing & Restoration",
+      subtitle: "Expert tile, marble & granite polishing that transforms your spaces into stunning masterpieces",
+      cta1: "WhatsApp Now",
+      cta2: "Call Now",
+    },
+    services: {
+      title: "Our Expert Services",
+      subtitle: "Delivering unmatched quality in surface restoration and polishing",
+      tilePolishing: {
+        title: "Tile Polishing",
+        desc: "Restore your tiles to their original brilliance with our professional polishing techniques. We handle ceramic, porcelain, and natural stone tiles.",
+      },
+      marblePolishing: {
+        title: "Marble Polishing",
+        desc: "Expert marble polishing that brings out the natural beauty and luxurious shine of your marble surfaces.",
+      },
+      granitePolishing: {
+        title: "Granite Polishing",
+        desc: "Professional granite polishing services that restore the depth and luster of your granite countertops and floors.",
+      },
+      floorCleaning: {
+        title: "Floor Cleaning & Restoration",
+        desc: "Comprehensive floor cleaning and restoration services for all surface types. Deep cleaning that revitalizes your spaces.",
+      },
+      scratchRemoval: {
+        title: "Scratch Removal",
+        desc: "Advanced scratch removal techniques that eliminate surface imperfections and restore flawless finishes.",
+      },
+      learnMore: "Learn More",
+    },
+    about: {
+      title: "Why Choose Us",
+      subtitle: "Over a decade of excellence in surface restoration",
+      experience: "10+ Years Experience",
+      experienceDesc: "A proven track record of delivering exceptional results across residential and commercial projects.",
+      quality: "Premium Quality",
+      qualityDesc: "We use only the finest equipment and materials to ensure lasting, brilliant results.",
+      satisfaction: "100% Satisfaction",
+      satisfactionDesc: "Our commitment to excellence means we don't stop until you're completely delighted.",
+      certified: "Certified Experts",
+      certifiedDesc: "Our team of trained professionals brings expertise and precision to every project.",
+    },
+    gallery: {
+      title: "Our Work Speaks",
+      subtitle: "See the dramatic transformations we deliver",
+      before: "Before",
+      after: "After",
+      viewAll: "View Full Gallery",
+      categories: {
+        all: "All",
+        beforeAfter: "Before & After",
+        machines: "Equipment",
+        workInProgress: "In Progress",
+      },
+    },
+    testimonials: {
+      title: "What Our Clients Say",
+      subtitle: "Trusted by hundreds of satisfied customers",
+    },
+    contact: {
+      title: "Get In Touch",
+      subtitle: "Ready to transform your surfaces? Contact us today for a free consultation",
+      name: "Your Name",
+      phone: "Phone Number",
+      message: "Your Message",
+      send: "Send Message",
+      whatsapp: "Chat on WhatsApp",
+      callUs: "Call Us Now",
+      address: "Our Location",
+      sending: "Sending...",
+      success: "Message sent successfully!",
+    },
+    footer: {
+      rights: "All Rights Reserved",
+      description: "Professional surface polishing and restoration services. Transforming spaces with premium quality tile, marble, and granite care.",
+      quickLinks: "Quick Links",
+      contactInfo: "Contact Info",
+    },
+    cta: {
+      title: "Ready to Transform Your Space?",
+      subtitle: "Get a free consultation and quote today. Our experts are standing by.",
+      button: "WhatsApp Now",
+    },
+  },
+  ar: {
+    nav: {
+      home: "الرئيسية",
+      services: "خدماتنا",
+      gallery: "معرض الأعمال",
+      about: "من نحن",
+      contact: "اتصل بنا",
+      callNow: "اتصل الآن",
+    },
+    hero: {
+      title: "تلميع وترميم الأسطح الاحترافي",
+      subtitle: "خبراء تلميع البلاط والرخام والجرانيت لتحويل مساحاتكم إلى تحف فنية مذهلة",
+      cta1: "احصل على عرض مجاني",
+      cta2: "اتصل الآن",
+    },
+    services: {
+      title: "خدماتنا المتخصصة",
+      subtitle: "نقدم جودة لا مثيل لها في ترميم وتلميع الأسطح",
+      tilePolishing: {
+        title: "تلميع البلاط",
+        desc: "استعد بريق بلاطك الأصلي مع تقنيات التلميع الاحترافية. نتعامل مع البلاط السيراميكي والبورسلين والحجر الطبيعي.",
+      },
+      marblePolishing: {
+        title: "تلميع الرخام",
+        desc: "تلميع رخام احترافي يبرز الجمال الطبيعي واللمعان الفاخر لأسطح الرخام الخاصة بكم.",
+      },
+      granitePolishing: {
+        title: "تلميع الجرانيت",
+        desc: "خدمات تلميع جرانيت احترافية تستعيد العمق واللمعان لأسطح وأرضيات الجرانيت.",
+      },
+      floorCleaning: {
+        title: "تنظيف وترميم الأرضيات",
+        desc: "خدمات شاملة لتنظيف وترميم الأرضيات لجميع أنواع الأسطح. تنظيف عميق يجدد مساحاتكم.",
+      },
+      scratchRemoval: {
+        title: "إزالة الخدوش",
+        desc: "تقنيات متقدمة لإزالة الخدوش تقضي على عيوب السطح وتستعيد اللمسات النهائية المثالية.",
+      },
+      learnMore: "اعرف المزيد",
+    },
+    about: {
+      title: "لماذا تختارنا",
+      subtitle: "أكثر من عقد من التميز في ترميم الأسطح",
+      experience: "خبرة +10 سنوات",
+      experienceDesc: "سجل حافل بتقديم نتائج استثنائية في المشاريع السكنية والتجارية.",
+      quality: "جودة عالية",
+      qualityDesc: "نستخدم أفضل المعدات والمواد لضمان نتائج مبهرة ودائمة.",
+      satisfaction: "رضا 100%",
+      satisfactionDesc: "التزامنا بالتميز يعني أننا لا نتوقف حتى تكونوا راضين تماماً.",
+      certified: "خبراء معتمدون",
+      certifiedDesc: "فريقنا من المحترفين المدربين يجلب الخبرة والدقة لكل مشروع.",
+    },
+    gallery: {
+      title: "أعمالنا تتحدث",
+      subtitle: "شاهدوا التحولات المذهلة التي نقدمها",
+      before: "قبل",
+      after: "بعد",
+      viewAll: "عرض المعرض الكامل",
+      categories: {
+        all: "الكل",
+        beforeAfter: "قبل وبعد",
+        machines: "المعدات",
+        workInProgress: "قيد التنفيذ",
+      },
+    },
+    testimonials: {
+      title: "ماذا يقول عملاؤنا",
+      subtitle: "موثوق من مئات العملاء الراضين",
+    },
+    contact: {
+      title: "تواصل معنا",
+      subtitle: "هل أنتم مستعدون لتحويل أسطحكم؟ تواصلوا معنا اليوم للحصول على استشارة مجانية",
+      name: "الاسم",
+      phone: "رقم الهاتف",
+      message: "رسالتكم",
+      send: "إرسال الرسالة",
+      whatsapp: "تواصل عبر واتساب",
+      callUs: "اتصل بنا الآن",
+      address: "موقعنا",
+      sending: "جاري الإرسال...",
+      success: "تم إرسال الرسالة بنجاح!",
+    },
+    footer: {
+      rights: "جميع الحقوق محفوظة",
+      description: "خدمات تلميع وترميم الأسطح الاحترافية. نحول المساحات بجودة عالية في العناية بالبلاط والرخام والجرانيت.",
+      quickLinks: "روابط سريعة",
+      contactInfo: "معلومات الاتصال",
+    },
+    cta: {
+      title: "هل أنتم مستعدون لتحويل مساحتكم؟",
+      subtitle: "احصلوا على استشارة وعرض سعر مجاني اليوم. خبراؤنا في انتظاركم.",
+      button: "احصل على عرض مجاني الآن",
+    },
+  },
+} as const;
+
+export type Language = "en" | "ar";
+export type TranslationKeys = (typeof translations)[Language];
