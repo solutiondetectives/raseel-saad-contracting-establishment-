@@ -8,12 +8,12 @@ const ServicesPage = () => {
   const { t, dir } = useLanguage();
 
   const services = [
-    { title: t.services.tilePolishing.title, desc: t.services.tilePolishing.desc, image: SERVICE_IMAGES["tile-polishing"], slug: "tile-polishing" },
-    { title: t.services.marblePolishing.title, desc: t.services.marblePolishing.desc, image: SERVICE_IMAGES["marble-polishing"], slug: "marble-polishing" },
-    { title: t.services.granitePolishing.title, desc: t.services.granitePolishing.desc, image: SERVICE_IMAGES["granite-polishing"], slug: "granite-polishing" },
-    { title: t.services.floorCleaning.title, desc: t.services.floorCleaning.desc, image: SERVICE_IMAGES["floor-cleaning"], slug: "floor-cleaning" },
-    { title: t.services.scratchRemoval.title, desc: t.services.scratchRemoval.desc, image: SERVICE_IMAGES["scratch-removal"], slug: "scratch-removal" },
-    { title: t.services.stairsCleaning.title, desc: t.services.stairsCleaning.desc, image: SERVICE_IMAGES["stairs-cleaning"], slug: "stairs-cleaning" },
+    { title: t.services.tilePolishing.title, desc: t.services.tilePolishing.desc, image: SERVICE_IMAGES["tile-polishing"].hero, slug: "tile-polishing" },
+    { title: t.services.marblePolishing.title, desc: t.services.marblePolishing.desc, image: SERVICE_IMAGES["marble-polishing"].hero, slug: "marble-polishing" },
+    { title: t.services.machineWork.title, desc: t.services.machineWork.desc, image: SERVICE_IMAGES["machine-work"].hero, slug: "machine-work" },
+    { title: t.services.floorCleaning.title, desc: t.services.floorCleaning.desc, image: SERVICE_IMAGES["floor-cleaning"].hero, slug: "floor-cleaning" },
+    { title: t.services.scratchRemoval.title, desc: t.services.scratchRemoval.desc, image: SERVICE_IMAGES["scratch-removal"].hero, slug: "scratch-removal" },
+    { title: t.services.stairsCleaning.title, desc: t.services.stairsCleaning.desc, image: SERVICE_IMAGES["stairs-cleaning"].hero, slug: "stairs-cleaning" },
   ];
 
   return (

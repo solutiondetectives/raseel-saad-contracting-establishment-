@@ -4,27 +4,31 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Play, X } from "lucide-react";
 import { useState } from "react";
 
+import marbleThumb from "@/assets/marble-service.jpg";
+import tileThumb from "@/assets/tile-service.jpg";
+import floorThumb from "@/assets/floor-service.jpg";
+
 const videos = [
   {
     id: "marble",
-    thumbnail: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80",
-    embedId: "https://drive.google.com/file/d/1Q-yEPbgRFTWETgL2A4FCnNhPibRDW0GS/preview",
+    thumbnail: marbleThumb,
+    embedId: "https://drive.google.com/file/d/1J55XtpIOUdM-lTZQtRhhAquPiTfnINLi/preview",
     en: { title: "Marble Polishing", desc: "Watch our experts restore a dull marble floor to a mirror-like finish using diamond polishing techniques." },
     ar: { title: "تلميع الرخام", desc: "شاهد خبراءنا وهم يعيدون لأرضية رخامية باهتة لمعانها المرآوي باستخدام تقنيات التلميع الماسي." },
   },
   {
     id: "tile",
-    thumbnail: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=80",
-    embedId: "dQw4w9WgXcQ",
+    thumbnail: tileThumb,
+    embedId: "https://drive.google.com/file/d/1zbcQPerfJWo_a1sjWEWrUg2Y6FEsk-KK/preview",
     en: { title: "Tile Polishing", desc: "See the dramatic transformation as we polish and restore ceramic tiles to their original brilliance." },
     ar: { title: "تلميع البلاط", desc: "شاهد التحول المذهل عند تلميع وترميم بلاط السيراميك لاستعادة بريقه الأصلي." },
   },
   {
-    id: "floor",
-    thumbnail: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&q=80",
-    embedId: "dQw4w9WgXcQ",
-    en: { title: "Floor Cleaning & Machine Work", desc: "Our industrial-grade machines deep clean and restore floors to pristine condition in hours." },
-    ar: { title: "تنظيف الأرضيات بالمعدات", desc: "آلاتنا الصناعية تنظف الأرضيات بعمق وتعيدها إلى حالتها الأصلية في ساعات." },
+    id: "machinework",
+    thumbnail: floorThumb,
+    embedId: "https://drive.google.com/file/d/1ZLdpnVtEGfcN-OFAd_y49Iy6Ez3hR-mE/preview",
+    en: { title: "Machine Work", desc: "Our industrial-grade machines deep clean and restore floors to pristine condition in hours." },
+    ar: { title: "العمل بالمعدات", desc: "آلاتنا الصناعية تنظف الأرضيات بعمق وتعيدها إلى حالتها الأصلية في ساعات." },
   },
 ];
 

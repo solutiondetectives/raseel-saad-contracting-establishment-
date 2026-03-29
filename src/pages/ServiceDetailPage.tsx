@@ -4,8 +4,6 @@ import { SEO } from "@/components/SEO";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Button } from "@/components/ui/button";
 import { Phone, MessageCircle, CheckCircle } from "lucide-react";
-import beforeAfter1 from "@/assets/before-after-1.jpg";
-import beforeAfter2 from "@/assets/before-after-2.jpg";
 import { SERVICE_IMAGES } from "@/data/services";
 
 const serviceData: Record<string, { en: { title: string; desc: string; steps: string[]; benefits: string[] }; ar: { title: string; desc: string; steps: string[]; benefits: string[] } }> = {
@@ -37,18 +35,18 @@ const serviceData: Record<string, { en: { title: string; desc: string; steps: st
       benefits: ["يبرز العروق الطبيعية للرخام", "يصلح علامات التآكل وبقع الماء", "يخلق لمسة نهائية شبيهة بالزجاج", "يحمي من الأضرار المستقبلية", "يزيد من قيمة العقار", "التعامل المتخصص مع جميع أنواع الرخام"],
     },
   },
-  "granite-polishing": {
+  "machine-work": {
     en: {
-      title: "Premium Granite Polishing Services",
-      desc: "Granite countertops and floors deserve expert care. Our granite polishing service restores the depth, clarity, and rich luster of your granite surfaces using professional-grade equipment and techniques.",
-      steps: ["Surface evaluation", "Deep cleaning treatment", "Crack and seam repair", "Progressive diamond polishing", "Color enhancement treatment", "Sealant and protection"],
-      benefits: ["Restores depth and clarity", "Removes surface scratches", "Enhanced stain resistance", "Long-lasting protection", "Suitable for all granite types", "Commercial and residential service"],
+      title: "Professional Machine Work & Deep Cleaning",
+      desc: "Our industrial-grade machines deep clean and restore floors to pristine condition in hours. We use advanced technology to tackle the toughest grime on any surface, ensuring a thorough restoration that manual cleaning can never achieve.",
+      steps: ["Surface evaluation & type identification", "Industrial deep cleaning treatment", "Machine scrubbing & grime extraction", "Stain spot treatment with specialized agents", "Restoration polishing & finishing", "Protective sealant application"],
+      benefits: ["Removes 99% of embedded dirt and grime", "Cleans deep into surface pores and textures", "Saves time and labor vs manual cleaning", "Uniform, professional results across large areas", "Includes protective coating for longevity", "Suitable for all hard floor types"],
     },
     ar: {
-      title: "خدمات تلميع الجرانيت المتميزة",
-      desc: "أسطح وأرضيات الجرانيت تستحق العناية المتخصصة. تستعيد خدمة تلميع الجرانيت لدينا العمق والوضوح واللمعان الغني لأسطح الجرانيت باستخدام معدات وتقنيات احترافية.",
-      steps: ["تقييم السطح", "معالجة التنظيف العميق", "إصلاح الشقوق والدرزات", "تلميع ماسي تدريجي", "معالجة تعزيز اللون", "مادة مانعة وحماية"],
-      benefits: ["يستعيد العمق والوضوح", "يزيل خدوش السطح", "مقاومة محسنة للبقع", "حماية طويلة الأمد", "مناسب لجميع أنواع الجرانيت", "خدمة تجارية وسكنية"],
+      title: "العمل بالمعدات الاحترافية والتنظيف العميق",
+      desc: "آلاتنا الصناعية تنظف الأرضيات بعمق وتعيدها إلى حالتها الأصلية في ساعات. نستخدم تقنيات متطورة للتعامل مع أصعب الأوساخ على أي سطح، مما يضمن ترميمًا شاملاً لا يمكن للتنظيف اليدوي تحقيقه أبدًا.",
+      steps: ["تقييم السطح وتحديد النوع", "معالجة التنظيف العميق الصناعية", "فرك بالمعدة واستخراج الأوساخ", "معالجة بقع البقع بمواد متخصصة", "تلميع الترميم والتشطيب", "تطبيق مادة مانعة وحماية"],
+      benefits: ["يزيل 99% من الأوساخ العميقة", "ينظف بعمق في مسام ومجاري السطح", "يوفر الوقت والجهد مقارنة بالتنظيف اليدوي", "نتائج احترافية موحدة في المساحات الكبيرة", "يتضمن طبقة واقية لطول العمر", "مناسب لجميع أنواع الأرضيات الصلبة"],
     },
   },
   "floor-cleaning": {
@@ -104,7 +102,7 @@ const ServiceDetailPage = () => {
   if (!data) return <div className="min-h-screen flex items-center justify-center text-foreground">Service not found</div>;
 
   const content = data[lang];
-  const heroImage = slug ? SERVICE_IMAGES[slug as keyof typeof SERVICE_IMAGES] : null;
+  const serviceAssets = slug ? SERVICE_IMAGES[slug as keyof typeof SERVICE_IMAGES] : null;
 
   return (
     <div dir={dir}>
@@ -113,7 +111,7 @@ const ServiceDetailPage = () => {
         description={slug === 'marble-polishing' ? t.seo.marbleDesc : slug === 'tile-polishing' ? t.seo.tileDesc : t.seo.defaultDesc} 
       />
       <section className="relative h-64 md:h-80 flex items-center justify-center">
-        {heroImage && <img src={heroImage} alt={content.title} className="absolute inset-0 w-full h-full object-cover" />}
+        {serviceAssets?.hero && <img src={serviceAssets.hero} alt={content.title} className="absolute inset-0 w-full h-full object-cover" />}
         <div className="absolute inset-0 bg-hero-gradient" />
         <h1 className="relative z-10 text-3xl md:text-5xl font-bold text-primary-foreground font-heading text-center px-4">{content.title}</h1>
       </section>
@@ -158,11 +156,33 @@ const ServiceDetailPage = () => {
               {lang === "en" ? "Results That Speak" : "نتائج تتحدث"}
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-              <div className="rounded-xl overflow-hidden shadow-premium">
-                <img src={beforeAfter1} alt="Before and after" className="w-full h-64 object-cover" loading="lazy" width={1024} height={768} />
+              <div className="rounded-xl overflow-hidden shadow-premium relative group h-64">
+                <img 
+                  src={serviceAssets?.before} 
+                  alt="Before" 
+                  className={`h-full transition-transform duration-500 group-hover:scale-105 ${(serviceAssets as any)?.isPair ? "" : "w-full object-cover"}`} 
+                  style={(serviceAssets as any)?.isPair ? { objectPosition: 'left', minWidth: '200%', maxWidth: 'none', objectFit: 'cover' } : {}}
+                  loading="lazy" 
+                  width={1024} 
+                  height={768} 
+                />
+                <div className="absolute top-4 left-4 bg-black/60 backdrop-blur-sm text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+                  {lang === "en" ? "Before" : "قبل"}
+                </div>
               </div>
-              <div className="rounded-xl overflow-hidden shadow-premium">
-                <img src={beforeAfter2} alt="Before and after" className="w-full h-64 object-cover" loading="lazy" width={1024} height={768} />
+              <div className="rounded-xl overflow-hidden shadow-premium relative group h-64">
+                <img 
+                  src={serviceAssets?.after} 
+                  alt="After" 
+                  className={`h-full transition-transform duration-500 group-hover:scale-105 ${(serviceAssets as any)?.isPair ? "" : "w-full object-cover"}`} 
+                  style={(serviceAssets as any)?.isPair ? { objectPosition: 'right', minWidth: '200%', maxWidth: 'none', objectFit: 'cover' } : {}}
+                  loading="lazy" 
+                  width={1024} 
+                  height={768} 
+                />
+                <div className="absolute top-4 left-4 bg-accent/90 text-accent-foreground text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+                  {lang === "en" ? "After" : "بعد"}
+                </div>
               </div>
             </div>
 

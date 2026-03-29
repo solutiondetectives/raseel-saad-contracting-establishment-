@@ -68,12 +68,12 @@ const ServicesSection = () => {
   const { t, dir } = useLanguage();
   const { ref, isVisible } = useScrollAnimation();
   const services = [
-    { title: t.services.tilePolishing.title, desc: t.services.tilePolishing.desc, image: SERVICE_IMAGES["tile-polishing"], slug: "tile-polishing" },
-    { title: t.services.marblePolishing.title, desc: t.services.marblePolishing.desc, image: SERVICE_IMAGES["marble-polishing"], slug: "marble-polishing" },
-    { title: t.services.granitePolishing.title, desc: t.services.granitePolishing.desc, image: SERVICE_IMAGES["granite-polishing"], slug: "granite-polishing" },
-    { title: t.services.floorCleaning.title, desc: t.services.floorCleaning.desc, image: SERVICE_IMAGES["floor-cleaning"], slug: "floor-cleaning" },
-    { title: t.services.scratchRemoval.title, desc: t.services.scratchRemoval.desc, image: SERVICE_IMAGES["scratch-removal"], slug: "scratch-removal" },
-    { title: t.services.stairsCleaning.title, desc: t.services.stairsCleaning.desc, image: SERVICE_IMAGES["stairs-cleaning"], slug: "stairs-cleaning" },
+    { title: t.services.tilePolishing.title, desc: t.services.tilePolishing.desc, image: SERVICE_IMAGES["tile-polishing"].hero, slug: "tile-polishing" },
+    { title: t.services.marblePolishing.title, desc: t.services.marblePolishing.desc, image: SERVICE_IMAGES["marble-polishing"].hero, slug: "marble-polishing" },
+    { title: t.services.machineWork.title, desc: t.services.machineWork.desc, image: SERVICE_IMAGES["machine-work"].hero, slug: "machine-work" },
+    { title: t.services.floorCleaning.title, desc: t.services.floorCleaning.desc, image: SERVICE_IMAGES["floor-cleaning"].hero, slug: "floor-cleaning" },
+    { title: t.services.scratchRemoval.title, desc: t.services.scratchRemoval.desc, image: SERVICE_IMAGES["scratch-removal"].hero, slug: "scratch-removal" },
+    { title: t.services.stairsCleaning.title, desc: t.services.stairsCleaning.desc, image: SERVICE_IMAGES["stairs-cleaning"].hero, slug: "stairs-cleaning" },
   ];
 
   return (
@@ -233,7 +233,7 @@ const Index = () => {
     "name": "مؤسسة رسيل سعد للمقاولات",
     "alternateName": "Riyadh Marble Polish",
     "url": "https://riyadhmarblepolish.com",
-    "telephone": "+966501921835",
+    "telephone": "+966 50 192 1835",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Al Wurud District",
@@ -242,7 +242,7 @@ const Index = () => {
     },
     "openingHours": "Sa-Th 07:00-22:00",
     "priceRange": "$$",
-    "description": "Professional marble, tile and granite polishing in Riyadh. Eco-friendly. Same-day service.",
+    "description": "Professional marble, tile and machine work polishing in Riyadh. Eco-friendly. Same-day service.",
     "areaServed": "Riyadh, Saudi Arabia",
     "sameAs": ["https://wa.me/966501921835"]
   };

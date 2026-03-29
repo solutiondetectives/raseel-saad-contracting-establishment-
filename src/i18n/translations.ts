@@ -25,9 +25,9 @@ export const translations = {
         title: "Marble Polishing",
         desc: "Expert marble polishing that brings out the natural beauty and luxurious shine of your marble surfaces.",
       },
-      granitePolishing: {
-        title: "Granite Polishing",
-        desc: "Professional granite polishing services that restore the depth and luster of your granite countertops and floors.",
+      machineWork: {
+        title: "Machine Work",
+        desc: "Our industrial-grade machines deep clean and restore floors to pristine condition in hours. We use advanced technology to tackle the toughest grime.",
       },
       floorCleaning: {
         title: "Floor Cleaning & Restoration",
@@ -39,7 +39,7 @@ export const translations = {
       },
       stairsCleaning: {
         title: "Stairs Cleaning",
-        desc: "Professional stairs cleaning services to remove dirt, stains, and buildup from all types of staircases. We restore cleanliness and improve safety with deep cleaning techniques.",
+        desc: "Professional stairs cleaning services to remove dirt, stains, and buildup from all types of staircases. We restore cleanliness and improve safety.",
       },
       learnMore: "Learn More",
     },
@@ -87,7 +87,7 @@ export const translations = {
     },
     footer: {
       rights: "All Rights Reserved",
-      description: "Professional surface polishing and restoration services. Transforming spaces with premium quality tile, marble, and granite care.",
+      description: "Professional surface polishing and restoration services. Transforming spaces with premium quality tile, marble, and machine work care.",
       quickLinks: "Quick Links",
       contactInfo: "Contact Info",
     },
@@ -98,7 +98,7 @@ export const translations = {
     },
     seo: {
       homeTitle: "Marble & Tile Polishing Riyadh | Riyadh Marble Polish — #1 Polishing Company",
-      homeDesc: "Professional marble polishing, tile polishing, granite cleaning & floor restoration in Riyadh. 10+ years experience. Same-day service. Eco-friendly products. Call +966 50 192 1835",
+      homeDesc: "Professional marble polishing, tile polishing, machine work & floor restoration in Riyadh. 10+ years experience. Same-day service. Eco-friendly products. Call +966 50 192 1835",
       marbleTitle: "Marble Polishing Riyadh | Expert Marble Cleaning & Restoration — Riyadh Marble Polish",
       marbleDesc: "Restore the natural shine of your marble floors with expert polishing service in Riyadh. Residential & commercial. Eco-friendly. Same-day service available.",
       tileTitle: "Tile Polishing Riyadh | Professional Ceramic & Tile Cleaning Service Saudi Arabia",
@@ -120,7 +120,7 @@ export const translations = {
     },
     hero: {
       title: "تلميع وترميم الأسطح الاحترافي",
-      subtitle: "خبراء تلميع البلاط والرخام والجرانيت لتحويل مساحاتكم إلى تحف فنية مذهلة",
+      subtitle: "خبراء تلميع البلاط والرخام والعمل بالمعدات لتحويل مساحاتكم إلى تحف فنية مذهلة",
       cta1: "احصل على عرض مجاني",
       cta2: "اتصل الآن",
     },
@@ -135,9 +135,9 @@ export const translations = {
         title: "تلميع الرخام",
         desc: "تلميع رخام احترافي يبرز الجمال الطبيعي واللمعان الفاخر لأسطح الرخام الخاصة بكم.",
       },
-      granitePolishing: {
-        title: "تلميع الجرانيت",
-        desc: "خدمات تلميع جرانيت احترافية تستعيد العمق واللمعان لأسطح وأرضيات الجرانيت.",
+      machineWork: {
+        title: "العمل بالمعدات",
+        desc: "آلاتنا الصناعية تنظف الأرضيات بعمق وتعيدها إلى حالتها الأصلية في ساعات. نستخدم تقنيات متطورة للتعامل مع أصعب الأوساخ.",
       },
       floorCleaning: {
         title: "تنظيف وترميم الأرضيات",
@@ -149,7 +149,7 @@ export const translations = {
       },
       stairsCleaning: {
         title: "تنظيف الدرج",
-        desc: "خدمات احترافية لتنظيف الدرج لإزالة الأوساخ والبقع والتراكمات من جميع أنواع السلالم، مع استعادة النظافة وتحسين السلامة باستخدام تقنيات تنظيف عميقة.",
+        desc: "خدمات احترافية لتنظيف الدرج لإزالة الأوساخ والبقع والتراكمات من جميع أنواع السلالم، مع استعادة النظافة وتحسين السلامة.",
       },
       learnMore: "اعرف المزيد",
     },
@@ -197,7 +197,7 @@ export const translations = {
     },
     footer: {
       rights: "جميع الحقوق محفوظة",
-      description: "خدمات تلميع وترميم الأسطح الاحترافية. نحول المساحات بجودة عالية في العناية بالبلاط والرخام والجرانيت.",
+      description: "خدمات تلميع وترميم الأسطح الاحترافي. نحول المساحات بجودة عالية في العناية بالبلاط والرخام والعمل بالمعدات.",
       quickLinks: "روابط سريعة",
       contactInfo: "معلومات الاتصال",
     },
@@ -208,7 +208,7 @@ export const translations = {
     },
     seo: {
       homeTitle: "جلي رخام وبلاط الرياض | مؤسسة رسيل سعد — أفضل شركة تلميع أرضيات في الرياض",
-      homeDesc: "خدمات احترافية لجلي الرخام والبلاط والجرانيت وتنظيف الأرضيات في الرياض. خبرة أكثر من 10 سنوات. خدمة في نفس اليوم. مواد صديقة للبيئة. اتصل: 1835 192 50 966+",
+      homeDesc: "خدمات احترافية لجلي الرخام والبلاط والعمل بالمعدات وتنظيف الأرضيات في الرياض. خبرة أكثر من 10 سنوات. خدمة في نفس اليوم. مواد صديقة للبيئة. اتصل: 1835 192 50 966+",
       marbleTitle: "جلي رخام الرياض | تلميع وترميم الرخام الاحترافي — مؤسسة رسيل سعد",
       marbleDesc: "استعد بريق أرضياتك الرخامية مع خدمة الجلي الاحترافية في الرياض. نخدم الفلل والمكاتب. مواد آمنة وصديقة للبيئة. خدمة سريعة في نفس اليوم.",
       tileTitle: "تلميع بلاط الرياض | جلي سيراميك وبلاط احترافي — خدمة سريعة في الرياض",
@@ -216,7 +216,7 @@ export const translations = {
       contactTitle: "تواصل معنا | جلي رخام وبلاط الرياض — اتصل أو واتساب +966 50 192 1835",
       contactDesc: "تواصل معنا لجلي الرخام وتلميع البلاط وترميم الأرضيات في الرياض. اتصل أو واتساب: 1835 192 50 966+. نخدم جميع أحياء الرياض.",
       defaultTitle: "تلميع أرضيات الرياض | خدمة تلميع وترميم الأسطح",
-      defaultDesc: "خدمات تلميع الرخام، وتلميع البلاط، وتلميع الجرانيت، وتنظيف الأرضيات الشاملة. خدمة في نفس اليوم."
+      defaultDesc: "خدمات تلميع الرخام، وتلميع البلاط، والعمل بالمعدات، وتنظيف الأرضيات الشاملة. خدمة في نفس اليوم."
     },
   },
 } as const;

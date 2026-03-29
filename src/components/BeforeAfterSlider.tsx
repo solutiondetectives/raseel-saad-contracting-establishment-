@@ -95,7 +95,7 @@ const BeforeAfterSection = () => {
     {
       before: graniteBefore,
       after: graniteAfter,
-      label: lang === "en" ? "Granite Polishing" : "تلميع الجرانيت",
+      label: lang === "en" ? "Machine Work" : "العمل بالمعدات",
     },
   ];
 
