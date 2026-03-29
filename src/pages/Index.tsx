@@ -1,4 +1,5 @@
 import { useLanguage } from "@/i18n/LanguageContext";
+import { SEO } from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import ServiceCard from "@/components/ServiceCard";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
@@ -72,6 +73,7 @@ const ServicesSection = () => {
     { title: t.services.granitePolishing.title, desc: t.services.granitePolishing.desc, image: SERVICE_IMAGES["granite-polishing"], slug: "granite-polishing" },
     { title: t.services.floorCleaning.title, desc: t.services.floorCleaning.desc, image: SERVICE_IMAGES["floor-cleaning"], slug: "floor-cleaning" },
     { title: t.services.scratchRemoval.title, desc: t.services.scratchRemoval.desc, image: SERVICE_IMAGES["scratch-removal"], slug: "scratch-removal" },
+    { title: t.services.stairsCleaning.title, desc: t.services.stairsCleaning.desc, image: SERVICE_IMAGES["stairs-cleaning"], slug: "stairs-cleaning" },
   ];
 
   return (
@@ -223,8 +225,35 @@ const CTASection = () => {
 };
 
 const Index = () => {
+  const { t } = useLanguage();
+
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "مؤسسة رسيل سعد للمقاولات",
+    "alternateName": "Riyadh Marble Polish",
+    "url": "https://riyadhmarblepolish.com",
+    "telephone": "+966501921835",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Al Wurud District",
+      "addressLocality": "Riyadh",
+      "addressCountry": "SA"
+    },
+    "openingHours": "Sa-Th 07:00-22:00",
+    "priceRange": "$$",
+    "description": "Professional marble, tile and granite polishing in Riyadh. Eco-friendly. Same-day service.",
+    "areaServed": "Riyadh, Saudi Arabia",
+    "sameAs": ["https://wa.me/966501921835"]
+  };
+
   return (
     <>
+      <SEO title={t.seo.homeTitle} description={t.seo.homeDesc}>
+        <script type="application/ld+json">
+          {JSON.stringify(schema)}
+        </script>
+      </SEO>
       <HeroSection />
       <TrustBadges />
       <BeforeAfterSection />

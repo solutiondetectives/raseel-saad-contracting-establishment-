@@ -10,10 +10,13 @@ const WhatsAppIcon = ({ className }: { className?: string }) => (
   </svg>
 );
 
+import { trackWhatsAppClick } from "@/lib/analytics";
+
 const FloatingWhatsApp = () => {
   return (
     <a
       href="https://wa.me/966501921835"
+      onClick={trackWhatsAppClick}
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-6 right-6 z-50 w-14 h-14 bg-emerald-500 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform animate-float"

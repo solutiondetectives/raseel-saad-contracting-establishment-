@@ -1,4 +1,5 @@
 import { useLanguage } from "@/i18n/LanguageContext";
+import { SEO } from "@/components/SEO";
 import { Link } from "react-router-dom";
 import ServiceCard from "@/components/ServiceCard";
 import { SERVICE_IMAGES } from "@/data/services";
@@ -12,10 +13,12 @@ const ServicesPage = () => {
     { title: t.services.granitePolishing.title, desc: t.services.granitePolishing.desc, image: SERVICE_IMAGES["granite-polishing"], slug: "granite-polishing" },
     { title: t.services.floorCleaning.title, desc: t.services.floorCleaning.desc, image: SERVICE_IMAGES["floor-cleaning"], slug: "floor-cleaning" },
     { title: t.services.scratchRemoval.title, desc: t.services.scratchRemoval.desc, image: SERVICE_IMAGES["scratch-removal"], slug: "scratch-removal" },
+    { title: t.services.stairsCleaning.title, desc: t.services.stairsCleaning.desc, image: SERVICE_IMAGES["stairs-cleaning"], slug: "stairs-cleaning" },
   ];
 
   return (
     <div dir={dir}>
+      <SEO title={`${t.nav.services} | ${t.seo.defaultTitle}`} />
       <section className="relative h-64 md:h-80 flex items-center justify-center">
         <div className="absolute inset-0 bg-hero-gradient" />
         <h1 className="relative z-10 text-4xl md:text-5xl font-bold text-primary-foreground font-heading">{t.nav.services}</h1>

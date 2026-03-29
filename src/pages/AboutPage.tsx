@@ -1,4 +1,5 @@
 import { useLanguage } from "@/i18n/LanguageContext";
+import { SEO } from "@/components/SEO";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Clock, Award, Star, Shield, Target, Eye } from "lucide-react";
 import serviceWork from "@/assets/service-work.jpg";
@@ -17,6 +18,7 @@ const AboutPage = () => {
 
   return (
     <div dir={dir}>
+      <SEO title={`${t.nav.about} | ${t.seo.defaultTitle}`} />
       {/* Banner */}
       <section className="relative h-64 md:h-80 flex items-center justify-center">
         <div className="absolute inset-0 bg-hero-gradient" />

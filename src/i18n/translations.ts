@@ -37,6 +37,10 @@ export const translations = {
         title: "Scratch Removal",
         desc: "Advanced scratch removal techniques that eliminate surface imperfections and restore flawless finishes.",
       },
+      stairsCleaning: {
+        title: "Stairs Cleaning",
+        desc: "Professional stairs cleaning services to remove dirt, stains, and buildup from all types of staircases. We restore cleanliness and improve safety with deep cleaning techniques.",
+      },
       learnMore: "Learn More",
     },
     about: {
@@ -92,6 +96,18 @@ export const translations = {
       subtitle: "Get a free consultation and quote today. Our experts are standing by.",
       button: "WhatsApp Now",
     },
+    seo: {
+      homeTitle: "Marble & Tile Polishing Riyadh | Riyadh Marble Polish — #1 Polishing Company",
+      homeDesc: "Professional marble polishing, tile polishing, granite cleaning & floor restoration in Riyadh. 10+ years experience. Same-day service. Eco-friendly products. Call +966 50 192 1835",
+      marbleTitle: "Marble Polishing Riyadh | Expert Marble Cleaning & Restoration — Riyadh Marble Polish",
+      marbleDesc: "Restore the natural shine of your marble floors with expert polishing service in Riyadh. Residential & commercial. Eco-friendly. Same-day service available.",
+      tileTitle: "Tile Polishing Riyadh | Professional Ceramic & Tile Cleaning Service Saudi Arabia",
+      tileDesc: "Get spotless, gleaming tiles with professional tile polishing in Riyadh. Villas, offices, malls & hotels. Fast, eco-friendly & affordable.",
+      contactTitle: "Contact Riyadh Marble Polish | Call or WhatsApp +966 50 192 1835",
+      contactDesc: "Contact us for marble polishing, tile cleaning and floor restoration in Riyadh. Call or WhatsApp +966 50 192 1835. Al Wurud, Riyadh.",
+      defaultTitle: "Riyadh Marble Polish | Premium Floor Restoration",
+      defaultDesc: "Comprehensive floor cleaning and restoration for all floor types in Riyadh. Same-day service available."
+    },
   },
   ar: {
     nav: {
@@ -130,6 +146,10 @@ export const translations = {
       scratchRemoval: {
         title: "إزالة الخدوش",
         desc: "تقنيات متقدمة لإزالة الخدوش تقضي على عيوب السطح وتستعيد اللمسات النهائية المثالية.",
+      },
+      stairsCleaning: {
+        title: "تنظيف الدرج",
+        desc: "خدمات احترافية لتنظيف الدرج لإزالة الأوساخ والبقع والتراكمات من جميع أنواع السلالم، مع استعادة النظافة وتحسين السلامة باستخدام تقنيات تنظيف عميقة.",
       },
       learnMore: "اعرف المزيد",
     },
@@ -185,6 +205,18 @@ export const translations = {
       title: "هل أنتم مستعدون لتحويل مساحتكم؟",
       subtitle: "احصلوا على استشارة وعرض سعر مجاني اليوم. خبراؤنا في انتظاركم.",
       button: "احصل على عرض مجاني الآن",
+    },
+    seo: {
+      homeTitle: "جلي رخام وبلاط الرياض | مؤسسة رسيل سعد — أفضل شركة تلميع أرضيات في الرياض",
+      homeDesc: "خدمات احترافية لجلي الرخام والبلاط والجرانيت وتنظيف الأرضيات في الرياض. خبرة أكثر من 10 سنوات. خدمة في نفس اليوم. مواد صديقة للبيئة. اتصل: 1835 192 50 966+",
+      marbleTitle: "جلي رخام الرياض | تلميع وترميم الرخام الاحترافي — مؤسسة رسيل سعد",
+      marbleDesc: "استعد بريق أرضياتك الرخامية مع خدمة الجلي الاحترافية في الرياض. نخدم الفلل والمكاتب. مواد آمنة وصديقة للبيئة. خدمة سريعة في نفس اليوم.",
+      tileTitle: "تلميع بلاط الرياض | جلي سيراميك وبلاط احترافي — خدمة سريعة في الرياض",
+      tileDesc: "احصل على بلاط لامع ونظيف تماماً مع خدمة تلميع البلاط والسيراميك في الرياض. نخدم المنازل والمكاتب والفنادق.",
+      contactTitle: "تواصل معنا | جلي رخام وبلاط الرياض — اتصل أو واتساب +966 50 192 1835",
+      contactDesc: "تواصل معنا لجلي الرخام وتلميع البلاط وترميم الأرضيات في الرياض. اتصل أو واتساب: 1835 192 50 966+. نخدم جميع أحياء الرياض.",
+      defaultTitle: "تلميع أرضيات الرياض | خدمة تلميع وترميم الأسطح",
+      defaultDesc: "خدمات تلميع الرخام، وتلميع البلاط، وتلميع الجرانيت، وتنظيف الأرضيات الشاملة. خدمة في نفس اليوم."
     },
   },
 } as const;

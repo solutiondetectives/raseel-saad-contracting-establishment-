@@ -4,6 +4,7 @@ import { useLanguage } from "@/i18n/LanguageContext";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone } from "lucide-react";
 import ThemeToggle from "@/components/ThemeToggle";
+import { trackPhoneClick } from "@/lib/analytics";
 
 const Navbar = () => {
   const { t, lang, setLang, dir } = useLanguage();
@@ -42,7 +43,7 @@ const Navbar = () => {
             <span className="font-heading text-accent-foreground text-lg font-bold">SP</span>
           </div>
           <span className={`font-heading text-xl font-bold ${isScrolled ? "text-foreground dark:text-white" : "text-primary-foreground dark:text-white"}`}>
-            ShinePolish
+            {lang === "ar" ? "مؤسسه رسيل سعد للمقاولات" : "Marble & Tile Polish"}
           </span>
         </Link>
 
@@ -73,7 +74,7 @@ const Navbar = () => {
             {lang === "en" ? "العربية" : "English"}
           </button>
 
-          <a href="tel:+966501921835">
+          <a href="tel:+966501921835" onClick={trackPhoneClick}>
             <Button variant="hero" size="sm" className="gap-2">
               <Phone className="w-4 h-4" />
               {t.nav.callNow}
@@ -118,7 +119,7 @@ const Navbar = () => {
                 {lang === "en" ? "العربية" : "English"}
               </button>
             </div>
-            <a href="tel:+966501921835">
+            <a href="tel:+966501921835" onClick={trackPhoneClick}>
               <Button variant="hero" className="w-full gap-2">
                 <Phone className="w-4 h-4" />
                 {t.nav.callNow}

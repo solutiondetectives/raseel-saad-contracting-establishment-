@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useLanguage } from "@/i18n/LanguageContext";
+import { SEO } from "@/components/SEO";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Button } from "@/components/ui/button";
 import { Phone, MessageCircle, MapPin, Mail, Send } from "lucide-react";
@@ -31,6 +32,7 @@ const ContactPage = () => {
 
   return (
     <div dir={dir}>
+      <SEO title={t.seo.contactTitle} description={t.seo.contactDesc} />
       <section className="relative h-64 md:h-80 flex items-center justify-center">
         <div className="absolute inset-0 bg-hero-gradient" />
         <h1 className="relative z-10 text-4xl md:text-5xl font-bold text-primary-foreground font-heading">{t.nav.contact}</h1>

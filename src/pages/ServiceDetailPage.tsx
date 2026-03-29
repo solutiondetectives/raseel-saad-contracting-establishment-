@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import { useLanguage } from "@/i18n/LanguageContext";
+import { SEO } from "@/components/SEO";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Button } from "@/components/ui/button";
 import { Phone, MessageCircle, CheckCircle } from "lucide-react";
@@ -78,11 +79,25 @@ const serviceData: Record<string, { en: { title: string; desc: string; steps: st
       benefits: ["يزيل الخدوش الخفيفة والعميقة", "نتائج إصلاح غير مرئية", "يعمل على أنواع أسطح متعددة", "يحافظ على لون السطح الأصلي", "اقتصادي مقارنة بالاستبدال", "وقت تنفيذ سريع"],
     },
   },
+  "stairs-cleaning": {
+    en: {
+      title: "Professional Stairs Cleaning Services",
+      desc: "Professional stairs cleaning services to remove dirt, stains, and buildup from all types of staircases. We restore cleanliness and improve safety with deep cleaning techniques for marble, tile, and granite stairs.",
+      steps: ["Staircase inspection & assessment", "Dust and debris removal", "Deep cleaning with specialized agents", "Stain and scuff mark treatment", "Polishing and restoration", "Anti-slip safety coating"],
+      benefits: ["Works on all staircase materials", "Removes stubborn stains and scuffs", "Improves safety with anti-slip treatment", "Restores original appearance", "Eco-friendly cleaning products", "Fast and efficient service"],
+    },
+    ar: {
+      title: "خدمات تنظيف الدرج الاحترافية",
+      desc: "خدمات احترافية لتنظيف الدرج لإزالة الأوساخ والبقع والتراكمات من جميع أنواع السلالم، مع استعادة النظافة وتحسين السلامة باستخدام تقنيات تنظيف عميقة للدرج الرخامي والبلاط والجرانيت.",
+      steps: ["فحص وتقييم الدرج", "إزالة الغبار والحطام", "تنظيف عميق بمواد متخصصة", "معالجة البقع وعلامات الاحتكاك", "تلميع وترميم", "طبقة حماية مضادة للانزلاق"],
+      benefits: ["يعمل على جميع مواد الدرج", "يزيل البقع العنيدة وعلامات الاحتكاك", "يحسن السلامة بمعالجة مضادة للانزلاق", "يستعيد المظهر الأصلي", "منتجات تنظيف صديقة للبيئة", "خدمة سريعة وفعالة"],
+    },
+  },
 };
 
 const ServiceDetailPage = () => {
   const { slug } = useParams<{ slug: string }>();
-  const { lang, dir } = useLanguage();
+  const { lang, dir, t } = useLanguage();
   const { ref, isVisible } = useScrollAnimation();
   const data = slug ? serviceData[slug] : null;
 
@@ -93,6 +108,10 @@ const ServiceDetailPage = () => {
 
   return (
     <div dir={dir}>
+      <SEO 
+        title={slug === 'marble-polishing' ? t.seo.marbleTitle : slug === 'tile-polishing' ? t.seo.tileTitle : `${content.title} | ${t.seo.defaultTitle}`} 
+        description={slug === 'marble-polishing' ? t.seo.marbleDesc : slug === 'tile-polishing' ? t.seo.tileDesc : t.seo.defaultDesc} 
+      />
       <section className="relative h-64 md:h-80 flex items-center justify-center">
         {heroImage && <img src={heroImage} alt={content.title} className="absolute inset-0 w-full h-full object-cover" />}
         <div className="absolute inset-0 bg-hero-gradient" />
