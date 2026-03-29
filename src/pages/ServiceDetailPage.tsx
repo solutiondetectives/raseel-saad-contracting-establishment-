@@ -156,30 +156,50 @@ const ServiceDetailPage = () => {
               {lang === "en" ? "Results That Speak" : "نتائج تتحدث"}
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-              <div className="rounded-xl overflow-hidden shadow-premium relative group h-64">
-                <img 
-                  src={serviceAssets?.before} 
-                  alt="Before" 
-                  className={`h-full transition-transform duration-500 group-hover:scale-105 ${(serviceAssets as any)?.isPair ? "" : "w-full object-cover"}`} 
-                  style={(serviceAssets as any)?.isPair ? { objectPosition: 'left', minWidth: '200%', maxWidth: 'none', objectFit: 'cover' } : {}}
-                  loading="lazy" 
-                  width={1024} 
-                  height={768} 
-                />
+              <div className="rounded-xl overflow-hidden shadow-premium relative group h-64 md:h-80">
+                {(serviceAssets as any)?.isPair ? (
+                  <div 
+                    className="w-full h-full bg-no-repeat transition-transform duration-500 group-hover:scale-105" 
+                    style={{ 
+                      backgroundImage: `url(${serviceAssets?.before})`, 
+                      backgroundSize: '200% 100%', 
+                      backgroundPosition: 'left center' 
+                    }} 
+                  />
+                ) : (
+                  <img 
+                    src={serviceAssets?.before} 
+                    alt="Before" 
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
+                    loading="lazy" 
+                    width={1024} 
+                    height={768} 
+                  />
+                )}
                 <div className="absolute top-4 left-4 bg-black/60 backdrop-blur-sm text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
                   {lang === "en" ? "Before" : "قبل"}
                 </div>
               </div>
-              <div className="rounded-xl overflow-hidden shadow-premium relative group h-64">
-                <img 
-                  src={serviceAssets?.after} 
-                  alt="After" 
-                  className={`h-full transition-transform duration-500 group-hover:scale-105 ${(serviceAssets as any)?.isPair ? "" : "w-full object-cover"}`} 
-                  style={(serviceAssets as any)?.isPair ? { objectPosition: 'right', minWidth: '200%', maxWidth: 'none', objectFit: 'cover' } : {}}
-                  loading="lazy" 
-                  width={1024} 
-                  height={768} 
-                />
+              <div className="rounded-xl overflow-hidden shadow-premium relative group h-64 md:h-80">
+                {(serviceAssets as any)?.isPair ? (
+                  <div 
+                    className="w-full h-full bg-no-repeat transition-transform duration-500 group-hover:scale-105" 
+                    style={{ 
+                      backgroundImage: `url(${serviceAssets?.after})`, 
+                      backgroundSize: '200% 100%', 
+                      backgroundPosition: 'right center' 
+                    }} 
+                  />
+                ) : (
+                  <img 
+                    src={serviceAssets?.after} 
+                    alt="After" 
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
+                    loading="lazy" 
+                    width={1024} 
+                    height={768} 
+                  />
+                )}
                 <div className="absolute top-4 left-4 bg-accent/90 text-accent-foreground text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
                   {lang === "en" ? "After" : "بعد"}
                 </div>
