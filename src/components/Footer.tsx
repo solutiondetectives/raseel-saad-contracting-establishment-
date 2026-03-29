@@ -19,9 +19,11 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-lg bg-accent flex items-center justify-center">
-                <span className="font-heading text-accent-foreground text-lg font-bold">SP</span>
-              </div>
+              <img
+                src="/logo.png"
+                alt="Raseel Saad Contracting Logo"
+                className="w-10 h-10 rounded-lg object-contain"
+              />
               <span className="font-heading text-xl font-bold" itemProp="alternateName">
                 {lang === "ar" ? "مؤسسه رسيل سعد للمقاولات" : "Marble & Tile Polish"}
               </span>

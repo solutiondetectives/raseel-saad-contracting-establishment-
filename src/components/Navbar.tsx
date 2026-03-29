@@ -39,9 +39,11 @@ const Navbar = () => {
     >
       <div className="container-narrow flex items-center justify-between h-16 md:h-20 px-4">
         <Link to="/" className="flex items-center gap-2">
-          <div className="w-10 h-10 rounded-lg bg-accent flex items-center justify-center">
-            <span className="font-heading text-accent-foreground text-lg font-bold">SP</span>
-          </div>
+          <img
+            src="/logo.png"
+            alt="Raseel Saad Contracting Logo"
+            className="w-10 h-10 rounded-lg object-contain"
+          />
           <span className={`font-heading text-xl font-bold ${isScrolled ? "text-foreground dark:text-white" : "text-primary-foreground dark:text-white"}`}>
             {lang === "ar" ? "مؤسسه رسيل سعد للمقاولات" : "Marble & Tile Polish"}
           </span>
