@@ -63,7 +63,7 @@ const Navbar = () => {
             </Link>
           ))}
 
-          <ThemeToggle />
+          <ThemeToggle className={isScrolled ? "text-foreground dark:text-white" : "text-primary-foreground dark:text-white"} />
 
           <button
             onClick={() => setLang(lang === "en" ? "ar" : "en")}
@@ -113,7 +113,7 @@ const Navbar = () => {
               </Link>
             ))}
             <div className="flex items-center gap-3 px-3 py-2">
-              <ThemeToggle />
+              <ThemeToggle className="text-foreground" />
               <button
                 onClick={() => setLang(lang === "en" ? "ar" : "en")}
                 className="text-base font-semibold py-2 px-3 rounded-lg border border-border text-foreground hover:bg-muted"

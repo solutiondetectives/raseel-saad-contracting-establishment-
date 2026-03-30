@@ -14,7 +14,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer dir={dir} className="bg-primary text-primary-foreground" itemScope itemType="https://schema.org/LocalBusiness">
+    <footer dir={dir} className="bg-[#0a192f] text-primary-foreground" itemScope itemType="https://schema.org/LocalBusiness">
       <div className="container-narrow section-padding">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           <div>
@@ -56,7 +56,7 @@ const Footer = () => {
             </h4>
             <div className="flex flex-col gap-3 text-sm text-primary-foreground/70">
               <a href="tel:+966501921835" itemProp="telephone" className="flex items-center gap-2 hover:text-accent transition-colors">
-                <Phone className="w-4 h-4 shrink-0" /> +966 50 192 1835
+                <Phone className="w-4 h-4 shrink-0" /> <span dir="ltr">+966 50 192 1835</span>
               </a>
               <a href="mailto:talywankhan3344@gmail.com" itemProp="email" className="flex items-center gap-2 hover:text-accent transition-colors">
                 <Mail className="w-4 h-4 shrink-0" /> talywankhan3344@gmail.com
@@ -97,7 +97,7 @@ const Footer = () => {
             . {t.footer.rights}.
           </span>
           <span className="font-medium text-primary-foreground/70">
-            <span itemProp="name">مؤسسة رسيل سعد للمقاولات</span> | Al Wurud, Riyadh, Saudi Arabia | <a href="tel:+966501921835">+966 50 192 1835</a> | riyadhmarblepolish.com
+            <span itemProp="name">مؤسسة رسيل سعد للمقاولات</span> | Al Wurud, Riyadh, Saudi Arabia | <span dir="ltr"><a href="tel:+966501921835">+966 50 192 1835</a></span> | riyadhmarblepolish.com
           </span>
         </div>
       </div>
