@@ -5,9 +5,9 @@ import { Clock, Trophy, ThumbsUp, ShieldCheck } from "lucide-react";
 const TrustBadges = () => {
   const { t, dir, lang } = useLanguage();
   const badges = [
-    { icon: <Clock className="w-7 h-7 text-accent" />, label: lang === "en" ? "10+ Years Experience" : "خبرة +10 سنوات" },
-    { icon: <Trophy className="w-7 h-7 text-accent" />, label: lang === "en" ? "500+ Projects Completed" : "أكثر من 500 مشروع مكتمل" },
-    { icon: <ThumbsUp className="w-7 h-7 text-accent" />, label: lang === "en" ? "100% Satisfaction Guaranteed" : "ضمان الرضا 100%" },
+    { icon: <Clock className="w-7 h-7 text-accent" />, label: lang === "en" ? "10+ Years Experience" : "خبرة +١٠ سنوات" },
+    { icon: <Trophy className="w-7 h-7 text-accent" />, label: lang === "en" ? "500+ Projects Completed" : "أكثر من ٥٠٠ مشروع مكتمل" },
+    { icon: <ThumbsUp className="w-7 h-7 text-accent" />, label: lang === "en" ? "100% Satisfaction Guaranteed" : "ضمان الرضا ١٠٠٪" },
     { icon: <ShieldCheck className="w-7 h-7 text-accent" />, label: lang === "en" ? "Licensed & Insured" : "مرخص ومؤمن" },
   ];
 

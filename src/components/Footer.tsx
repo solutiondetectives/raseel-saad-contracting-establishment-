@@ -3,7 +3,7 @@ import { useLanguage } from "@/i18n/LanguageContext";
 import { Phone, Mail, MapPin } from "lucide-react";
 
 const Footer = () => {
-  const { t, dir, lang } = useLanguage();
+  const { t, dir, lang, toArabicNumerals } = useLanguage();
 
   const links = [
     { to: "/", label: t.nav.home },
@@ -56,7 +56,7 @@ const Footer = () => {
             </h4>
             <div className="flex flex-col gap-3 text-sm text-primary-foreground/70">
               <a href="tel:+966501921835" itemProp="telephone" className="flex items-center gap-2 hover:text-accent transition-colors">
-                <Phone className="w-4 h-4 shrink-0" /> <span dir="ltr">+966 50 192 1835</span>
+                <Phone className="w-4 h-4 shrink-0" /> <span dir="ltr">{lang === "ar" ? toArabicNumerals("+966 50 192 1835") : "+966 50 192 1835"}</span>
               </a>
               <a href="mailto:talywankhan3344@gmail.com" itemProp="email" className="flex items-center gap-2 hover:text-accent transition-colors">
                 <Mail className="w-4 h-4 shrink-0" /> talywankhan3344@gmail.com
@@ -85,7 +85,7 @@ const Footer = () => {
 
         <div className="mt-6 pt-6 border-t border-primary-foreground/10 text-center text-sm text-primary-foreground/50 flex flex-col gap-2">
           <span>
-            © {new Date().getFullYear()}{" "}
+            © {lang === "ar" ? toArabicNumerals(new Date().getFullYear()) : new Date().getFullYear()}{" "}
             <a
               href="https://solutiondetectives.com/"
               target="_blank"
@@ -97,7 +97,7 @@ const Footer = () => {
             . {t.footer.rights}.
           </span>
           <span className="font-medium text-primary-foreground/70">
-            <span itemProp="name">مؤسسة رسيل سعد للمقاولات</span> | Al Wurud, Riyadh, Saudi Arabia | <span dir="ltr"><a href="tel:+966501921835">+966 50 192 1835</a></span> | riyadhmarblepolish.com
+            <span itemProp="name">مؤسسة رسيل سعد للمقاولات</span> | Al Wurud, Riyadh, Saudi Arabia | <span dir="ltr"><a href="tel:+966501921835">{lang === "ar" ? toArabicNumerals("+966 50 192 1835") : "+966 50 192 1835"}</a></span> | riyadhmarblepolish.com
           </span>
         </div>
       </div>

@@ -46,7 +46,7 @@ const serviceData: Record<string, { en: { title: string; desc: string; steps: st
       title: "العمل بالمعدات الاحترافية والتنظيف العميق",
       desc: "آلاتنا الصناعية تنظف الأرضيات بعمق وتعيدها إلى حالتها الأصلية في ساعات. نستخدم تقنيات متطورة للتعامل مع أصعب الأوساخ على أي سطح، مما يضمن ترميمًا شاملاً لا يمكن للتنظيف اليدوي تحقيقه أبدًا.",
       steps: ["تقييم السطح وتحديد النوع", "معالجة التنظيف العميق الصناعية", "فرك بالمعدة واستخراج الأوساخ", "معالجة بقع البقع بمواد متخصصة", "تلميع الترميم والتشطيب", "تطبيق مادة مانعة وحماية"],
-      benefits: ["يزيل 99% من الأوساخ العميقة", "ينظف بعمق في مسام ومجاري السطح", "يوفر الوقت والجهد مقارنة بالتنظيف اليدوي", "نتائج احترافية موحدة في المساحات الكبيرة", "يتضمن طبقة واقية لطول العمر", "مناسب لجميع أنواع الأرضيات الصلبة"],
+      benefits: ["يزيل ٩٩٪ من الأوساخ العميقة", "ينظف بعمق في مسام ومجاري السطح", "يوفر الوقت والجهد مقارنة بالتنظيف اليدوي", "نتائج احترافية موحدة في المساحات الكبيرة", "يتضمن طبقة واقية لطول العمر", "مناسب لجميع أنواع الأرضيات الصلبة"],
     },
   },
   "floor-cleaning": {
@@ -95,7 +95,7 @@ const serviceData: Record<string, { en: { title: string; desc: string; steps: st
 
 const ServiceDetailPage = () => {
   const { slug } = useParams<{ slug: string }>();
-  const { lang, dir, t } = useLanguage();
+  const { lang, dir, t, toArabicNumerals } = useLanguage();
   const { ref, isVisible } = useScrollAnimation();
   const data = slug ? serviceData[slug] : null;
 
@@ -130,7 +130,9 @@ const ServiceDetailPage = () => {
                   {content.steps.map((step, i) => (
                     <div key={i} className="flex items-start gap-3">
                       <div className="w-8 h-8 rounded-full bg-accent/10 flex items-center justify-center shrink-0 mt-0.5">
-                        <span className="text-sm font-bold text-accent">{i + 1}</span>
+                        <span className="text-sm font-bold text-accent">
+                          {lang === "ar" ? toArabicNumerals(i + 1) : i + 1}
+                        </span>
                       </div>
                       <p className="text-foreground">{step}</p>
                     </div>

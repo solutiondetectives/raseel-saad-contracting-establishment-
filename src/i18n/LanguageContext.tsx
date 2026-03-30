@@ -6,9 +6,15 @@ interface LanguageContextType {
   setLang: (lang: Language) => void;
   t: TranslationKeys;
   dir: "ltr" | "rtl";
+  toArabicNumerals: (n: string | number) => string;
 }
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
+
+const arabicNumerals = ["٠", "١", "٢", "٣", "٤", "٥", "٦", "٧", "٨", "٩"];
+const toArabicNumerals = (n: string | number) => {
+  return n.toString().replace(/\d/g, (d) => arabicNumerals[parseInt(d)]);
+};
 
 export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [lang, setLangState] = useState<Language>(() => {
@@ -30,7 +36,7 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
   }, [dir, lang]);
 
   return (
-    <LanguageContext.Provider value={{ lang, setLang, t, dir }}>
+    <LanguageContext.Provider value={{ lang, setLang, t, dir, toArabicNumerals }}>
       {children}
     </LanguageContext.Provider>
   );

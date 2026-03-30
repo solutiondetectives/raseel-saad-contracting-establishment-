@@ -7,6 +7,7 @@ const AnimatedNumber = ({ target, suffix = "" }: { target: number; suffix?: stri
   const ref = useRef<HTMLSpanElement>(null);
   const isInView = useInView(ref, { once: true });
   const [value, setValue] = useState(0);
+  const { lang, toArabicNumerals } = useLanguage();
 
   useEffect(() => {
     if (!isInView) return;
@@ -25,7 +26,18 @@ const AnimatedNumber = ({ target, suffix = "" }: { target: number; suffix?: stri
     return () => clearInterval(timer);
   }, [isInView, target]);
 
-  return <span ref={ref}>{value}{suffix}</span>;
+  const displayValue = lang === "ar" ? toArabicNumerals(value) : value;
+  const displaySuffix =
+    lang === "ar"
+      ? (suffix === "%" ? "٪" : suffix === "+" ? "+" : suffix).replace(/\+/g, "+").replace(/\d/g, (d) => toArabicNumerals(d))
+      : suffix;
+
+  return (
+    <span ref={ref}>
+      {displayValue}
+      {displaySuffix}
+    </span>
+  );
 };
 
 const StatsCounter = () => {

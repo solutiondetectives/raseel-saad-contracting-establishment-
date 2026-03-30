@@ -13,7 +13,7 @@ const contactSchema = z.object({
 });
 
 const ContactPage = () => {
-  const { t, dir, lang } = useLanguage();
+  const { t, dir, lang, toArabicNumerals } = useLanguage();
   const { ref, isVisible } = useScrollAnimation();
   const [form, setForm] = useState({ name: "", phone: "", message: "" });
   const [submitted, setSubmitted] = useState(false);
@@ -76,7 +76,9 @@ const ContactPage = () => {
                   </div>
                   <div>
                     <h3 className="font-heading font-semibold text-foreground">{t.contact.whatsapp}</h3>
-                    <p className="text-muted-foreground text-sm">+966 50 192 1835</p>
+                    <p className="text-muted-foreground text-sm" dir="ltr">
+                      {lang === "ar" ? toArabicNumerals("+966 50 192 1835") : "+966 50 192 1835"}
+                    </p>
                   </div>
                 </div>
               </a>
@@ -88,7 +90,9 @@ const ContactPage = () => {
                   </div>
                   <div>
                     <h3 className="font-heading font-semibold text-foreground">{t.contact.callUs}</h3>
-                    <p className="text-muted-foreground text-sm">+966 50 192 1835</p>
+                    <p className="text-muted-foreground text-sm" dir="ltr">
+                      {lang === "ar" ? toArabicNumerals("+966 50 192 1835") : "+966 50 192 1835"}
+                    </p>
                   </div>
                 </div>
               </a>
