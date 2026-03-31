@@ -13,7 +13,13 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 
 const arabicNumerals = ["٠", "١", "٢", "٣", "٤", "٥", "٦", "٧", "٨", "٩"];
 const toArabicNumerals = (n: string | number) => {
-  return n.toString().replace(/\d/g, (d) => arabicNumerals[parseInt(d)]);
+  const str = n.toString();
+  const replaced = str.replace(/\d/g, (d) => arabicNumerals[parseInt(d)]);
+  // For phone numbers or strings starting with +, force LTR order using Unicode markers
+  if (str.startsWith('+')) {
+    return `\u202D${replaced}\u202C`;
+  }
+  return replaced;
 };
 
 export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {

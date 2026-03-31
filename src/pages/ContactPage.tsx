@@ -76,7 +76,7 @@ const ContactPage = () => {
                   </div>
                   <div>
                     <h3 className="font-heading font-semibold text-foreground">{t.contact.whatsapp}</h3>
-                    <p className="text-muted-foreground text-sm" dir="ltr">
+                    <p className="text-muted-foreground text-sm" style={{ direction: 'ltr', unicodeBidi: 'isolate' }}>
                       {lang === "ar" ? toArabicNumerals("+966 50 192 1835") : "+966 50 192 1835"}
                     </p>
                   </div>
@@ -90,7 +90,7 @@ const ContactPage = () => {
                   </div>
                   <div>
                     <h3 className="font-heading font-semibold text-foreground">{t.contact.callUs}</h3>
-                    <p className="text-muted-foreground text-sm" dir="ltr">
+                    <p className="text-muted-foreground text-sm" style={{ direction: 'ltr', unicodeBidi: 'isolate' }}>
                       {lang === "ar" ? toArabicNumerals("+966 50 192 1835") : "+966 50 192 1835"}
                     </p>
                   </div>

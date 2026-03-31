@@ -56,7 +56,7 @@ const Footer = () => {
             </h4>
             <div className="flex flex-col gap-3 text-sm text-primary-foreground/70">
               <a href="tel:+966501921835" itemProp="telephone" className="flex items-center gap-2 hover:text-accent transition-colors">
-                <Phone className="w-4 h-4 shrink-0" /> <span dir="ltr">{lang === "ar" ? toArabicNumerals("+966 50 192 1835") : "+966 50 192 1835"}</span>
+                <Phone className="w-4 h-4 shrink-0" /> <span style={{ direction: 'ltr', unicodeBidi: 'isolate' }}>{lang === "ar" ? toArabicNumerals("+966 50 192 1835") : "+966 50 192 1835"}</span>
               </a>
               <a href="mailto:talywankhan3344@gmail.com" itemProp="email" className="flex items-center gap-2 hover:text-accent transition-colors">
                 <Mail className="w-4 h-4 shrink-0" /> talywankhan3344@gmail.com
@@ -96,8 +96,8 @@ const Footer = () => {
             </a>
             . {t.footer.rights}.
           </span>
-          <span className="font-medium text-primary-foreground/70">
-            <span itemProp="name">مؤسسة رسيل سعد للمقاولات</span> | Al Wurud, Riyadh, Saudi Arabia | <span dir="ltr"><a href="tel:+966501921835">{lang === "ar" ? toArabicNumerals("+966 50 192 1835") : "+966 50 192 1835"}</a></span> | riyadhmarblepolish.com
+          <span className="font-medium text-primary-foreground/70" style={{ direction: 'ltr', unicodeBidi: 'isolate' }}>
+            <span itemProp="name">{lang === "ar" ? "مؤسسة رسيل سعد للمقاولات" : "ShinePolish"}</span> | Al Wurud, Riyadh, Saudi Arabia | <a href="tel:+966501921835">{lang === "ar" ? toArabicNumerals("+966 50 192 1835") : "+966 50 192 1835"}</a> | riyadhmarblepolish.com
           </span>
         </div>
       </div>
