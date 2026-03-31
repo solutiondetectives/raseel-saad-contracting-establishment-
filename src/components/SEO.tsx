@@ -13,6 +13,7 @@ export const SEO = ({ title, description, children }: SEOProps) => {
   
   const siteTitle = title || t.seo.defaultTitle;
   const siteDesc = description || t.seo.defaultDesc;
+  const siteKeywords = t.seo.keywords; // Global keywords from translations
   
   // Use state for pathname to ensure it's available client-side without SSR hydration errors
   const [path, setPath] = useState('');
@@ -27,6 +28,8 @@ export const SEO = ({ title, description, children }: SEOProps) => {
     <Helmet>
       <title>{siteTitle}</title>
       <meta name="description" content={siteDesc} />
+      <meta name="keywords" content={siteKeywords} />
+      <meta name="author" content="Solution Detectives" />
       
       {/* Alternate Languages */}
       <link rel="alternate" hrefLang="en" href={`https://riyadhmarblepolish.com${path}`} />

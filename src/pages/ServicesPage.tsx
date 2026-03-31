@@ -18,7 +18,7 @@ const ServicesPage = () => {
 
   return (
     <div dir={dir}>
-      <SEO title={`${t.nav.services} | ${t.seo.defaultTitle}`} />
+      <SEO title={t.seo.servicesTitle} />
       <section className="relative h-64 md:h-80 flex items-center justify-center">
         <div className="absolute inset-0 bg-hero-gradient" />
         <h1 className="relative z-10 text-4xl md:text-5xl font-bold text-primary-foreground font-heading">{t.nav.services}</h1>

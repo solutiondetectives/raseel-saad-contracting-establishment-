@@ -104,7 +104,7 @@ const ContactPage = () => {
                   </div>
                   <div>
                     <h3 className="font-heading font-semibold text-foreground">Email</h3>
-                    <p className="text-muted-foreground text-sm">info@shinepolish.sa</p>
+                    <p className="text-muted-foreground text-sm">talywankhan3344@gmail.com</p>
                   </div>
                 </div>
               </a>
@@ -115,7 +115,7 @@ const ContactPage = () => {
                 </div>
                 <div>
                   <h3 className="font-heading font-semibold text-foreground">{t.contact.address}</h3>
-                  <p className="text-muted-foreground text-sm">Al Olaya District, Riyadh, Saudi Arabia</p>
+                  <p className="text-muted-foreground text-sm">Al Wurud District, Riyadh Saudi Arabia</p>
                 </div>
               </div>
 
