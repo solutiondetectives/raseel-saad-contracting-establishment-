@@ -38,7 +38,7 @@ const HeroSection = () => {
             <Star className="w-4 h-4 text-accent" />
             <span className="text-sm font-medium text-accent">★★★★★ Rated Excellence</span>
           </div>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground dark:text-white leading-tight mb-6 font-heading hero-shimmer">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground dark:text-white leading-relaxed mb-6 font-heading hero-shimmer">
             {t.hero.title}
           </h1>
           <p className="text-lg md:text-xl text-primary-foreground/80 dark:text-white/80 mb-8 leading-relaxed">
