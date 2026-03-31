@@ -97,7 +97,7 @@ const ContactPage = () => {
                 </div>
               </a>
 
-              <a href="mailto:info@shinepolish.sa" className="block">
+              <a href="mailto:talywankhan3344@gmail.com" className="block">
                 <div className="bg-card rounded-xl p-6 shadow-premium hover:shadow-gold transition-shadow flex items-center gap-4">
                   <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center shrink-0">
                     <Mail className="w-6 h-6 text-accent" />
