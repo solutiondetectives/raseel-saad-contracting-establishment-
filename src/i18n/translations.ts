@@ -46,7 +46,7 @@ export const translations = {
     about: {
       title: "Why Choose Us",
       subtitle: "Over a decade of excellence in surface restoration",
-      experience: "10+ Years Experience",
+      experience: "20+ Years Experience",
       experienceDesc: "A proven track record of delivering exceptional results across residential and commercial projects.",
       quality: "Premium Quality",
       qualityDesc: "We use only the finest equipment and materials to ensure lasting, brilliant results.",
@@ -98,19 +98,19 @@ export const translations = {
     },
     seo: {
       homeTitle: "Marble & Tile Polishing Riyadh | #1 Floor Restoration Experts",
-      homeDesc: "Transform your floors with Riyadh's premier marble polishing and tile restoration specialists. Over 10 years of experience providing mirror-finish marble polishing, deep tile cleaning, and machine floor restoration. Same-day service available.",
+      homeDesc: "Transform your floors with Riyadh's premier marble polishing and tile restoration specialists. Over 20 years of experience providing mirror-finish marble polishing, deep tile cleaning, and machine floor restoration. Same-day service available.",
       keywords: "marble polishing riyadh, tile polishing saudi arabia, floor restoration riyadh, marble cleaning riyadh, stone polishing riyadh, ceramic tile cleaning, floor crystallization, solution detectives",
       marbleTitle: "Marble Polishing Riyadh | Expert Marble Cleaning & Restoration",
       marbleDesc: "Specialist marble restoration and crystallization in Riyadh. We remove scratches, stains, and dullness to restore your marble's natural brilliance and luxury feel. Eco-friendly process.",
       tileTitle: "Tile Polishing Riyadh | Professional Ceramic & Tile Cleaning Service",
       tileDesc: "Professional ceramic and porcelain tile polishing in Riyadh. Deep grout cleaning and high-gloss restoration for villas, offices, and commercial spaces. Fast and affordable.",
-      aboutTitle: "About Riyadh Marble Polish | 10+ Years of Surface Excellence",
+      aboutTitle: "About Riyadh Marble Polish | 20+ Years of Surface Excellence",
       galleryTitle: "Floor Polishing Results | Before & After Gallery - Riyadh",
       servicesTitle: "Professional Floor Polishing Services in Riyadh | Marble & Tile",
       contactTitle: "Request a Quote | Contact Riyadh Marble Polish Experts",
       contactDesc: "Professional floor restoration services in Riyadh. Get a free quote for marble polishing, tile cleaning, and deep floor restoration today.",
       defaultTitle: "Riyadh Marble Polish | Premium Floor Restoration",
-      defaultDesc: "Comprehensive floor cleaning and restoration for all floor types in Riyadh. Same-day service available with 10+ years experience."
+      defaultDesc: "Comprehensive floor cleaning and restoration for all floor types in Riyadh. Same-day service available with 20+ years experience."
     },
   },
   ar: {
@@ -123,7 +123,7 @@ export const translations = {
       callNow: "اتصل الآن",
     },
     hero: {
-      title: "تلميع وترميم الأسطح الاحترافي",
+      title: "افضل مؤسسة لجلي وتلميع الرخام في الرياض",
       subtitle: "خبراء تلميع البلاط والرخام والعمل بالمعدات لتحويل مساحاتكم إلى تحف فنية مذهلة",
       cta1: "احصل على عرض مجاني",
       cta2: "اتصل الآن",
@@ -160,7 +160,7 @@ export const translations = {
     about: {
       title: "لماذا تختارنا",
       subtitle: "أكثر من عقد من التميز في ترميم الأسطح",
-      experience: "خبرة +١٠ سنوات",
+      experience: "خبرة +٢٠ سنة",
       experienceDesc: "سجل حافل بتقديم نتائج استثنائية في المشاريع السكنية والتجارية.",
       quality: "جودة عالية",
       qualityDesc: "نستخدم أفضل المعدات والمواد لضمان نتائج مبهرة ودائمة.",
@@ -201,7 +201,7 @@ export const translations = {
     },
     footer: {
       rights: "جميع الحقوق محفوظة",
-      description: "خدمات تلميع وترميم الأسطح الاحترافي. نحول المساحات بجودة عالية في العناية بالبلاط والرخام والعمل بالمعدات.",
+      description: "خدمات افضل مؤسسة لجلي وتلميع الرخام في الرياض. نحول المساحات بجودة عالية في العناية بالبلاط والرخام والعمل بالمعدات.",
       quickLinks: "روابط سريعة",
       contactInfo: "معلومات الاتصال",
     },
@@ -212,19 +212,19 @@ export const translations = {
     },
     seo: {
       homeTitle: "جلي رخام وبلاط الرياض | مؤسسة رسيل سعد — ملوك تلميع الأرضيات",
-      homeDesc: "استعد جمال أرضياتك مع أفضل شركة جلي رخام وتلميع بلاط في الرياض. خبرة تزيد عن ١٠ سنوات في ترميم الرخام، تنظيف السيراميك، والعمل بالمعدات الاحترافية لنتائج مبهرة ولمعان كالمرآة. خدمة سريعة في نفس اليوم.",
+      homeDesc: "استعد جمال أرضياتك مع أفضل شركة جلي رخام وتلميع بلاط في الرياض. خبرة تزيد عن ٢٠ سنة في ترميم الرخام، تنظيف السيراميك، والعمل بالمعدات الاحترافية لنتائج مبهرة ولمعان كالمرآة. خدمة سريعة في نفس اليوم.",
       keywords: "جلي رخام الرياض, تلميع بلاط الرياض, تنظيف ارضيات الرياض, جلي سيراميك, شركة جلي رخام, تلميع درج, جلي جرانيت, ترميم رخام, سوليوشن ديتكتيفز, Solution Detectives",
       marbleTitle: "جلي رخام الرياض | تلميع وترميم الرخام الاحترافي — مؤسسة رسيل سعد",
       marbleDesc: "متخصصون في جلي وتلميع الرخام الماسي والكريستال في الرياض. نزيل الخدوش والبقع ونعيد للرخام بريقه الطبيعي وفخامته. نستخدم أحدث التقنيات والمعدات.",
       tileTitle: "تلميع بلاط الرياض | جلي سيراميك وبلاط احترافي — خدمة سريعة في الرياض",
       tileDesc: "تلميع بلاط وسيراميك احترافي في الرياض. تنظيف عميق للمفاصل وترميم عالي اللمعان للفلل والمكاتب والمساحات التجارية. خدمة سريعة وبأسعار تنافسية.",
-      aboutTitle: "من نحن | مؤسسة رسيل سعد لجلي الرخام والبلاط — ١٠ سنوات خبرة",
+      aboutTitle: "من نحن | مؤسسة رسيل سعد لجلي الرخام والبلاط — ٢٠ سنة خبرة",
       galleryTitle: "نتائج جلي الرخام | معرض الصور قبل وبعد — الرياض",
       servicesTitle: "خدمات جلي الرخام والبلاط بالرياض | تلميع وترميم الأرضيات",
       contactTitle: "تواصل معنا | احصل على عرض سعر جلي رخام وبلاط بالرياض",
       contactDesc: "تواصل معنا لجلي الرخام وتلميع البلاط وترميم الأرضيات في الرياض. احصل على عرض سعر مجاني اليوم لأفضل خدمات العناية بالأرضيات.",
       defaultTitle: "تلميع أرضيات الرياض | خدمة تلميع وترميم الأسطح",
-      defaultDesc: "خدمات تلميع الرخام، وتلميع البلاط، والعمل بالمعدات الشاملة. خبرة دامت ١٠ سنوات في خدمة سكان الرياض."
+      defaultDesc: "خدمات تلميع الرخام، وتلميع البلاط، والعمل بالمعدات الشاملة. خبرة دامت ٢٠ سنة في خدمة سكان الرياض."
     },
   },
 } as const;
