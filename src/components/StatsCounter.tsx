@@ -44,7 +44,7 @@ const StatsCounter = () => {
   const { dir, lang } = useLanguage();
 
   const stats = [
-    { icon: <Clock className="w-8 h-8" />, value: 10, suffix: "+", label: lang === "en" ? "Years Experience" : "سنوات خبرة" },
+    { icon: <Clock className="w-8 h-8" />, value: 20, suffix: "+", label: lang === "en" ? "Years Experience" : "سنة خبرة" },
     { icon: <Trophy className="w-8 h-8" />, value: 500, suffix: "+", label: lang === "en" ? "Projects Completed" : "مشروع مكتمل" },
     { icon: <Users className="w-8 h-8" />, value: 200, suffix: "+", label: lang === "en" ? "Happy Clients" : "عميل سعيد" },
     { icon: <Star className="w-8 h-8" />, value: 98, suffix: "%", label: lang === "en" ? "Satisfaction Rate" : "نسبة الرضا" },
