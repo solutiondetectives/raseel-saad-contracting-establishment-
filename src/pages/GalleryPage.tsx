@@ -3,10 +3,20 @@ import { useLanguage } from "@/i18n/LanguageContext";
 import { SEO } from "@/components/SEO";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { X } from "lucide-react";
-import beforeAfter1 from "@/assets/before-after-1.jpg";
-import beforeAfter2 from "@/assets/before-after-2.jpg";
-import serviceWork from "@/assets/service-work.jpg";
-import heroMarble from "@/assets/hero-marble.jpg";
+import ba1 from "@/assets/gallery/ba-1.jpg";
+import ba2 from "@/assets/gallery/ba-2.jpg";
+import img1 from "@/assets/gallery/img-1.jpg";
+import img2 from "@/assets/gallery/img-2.jpg";
+import img3 from "@/assets/gallery/img-3.jpg";
+import img4 from "@/assets/gallery/img-4.jpg";
+import img5 from "@/assets/gallery/img-5.jpg";
+import img6 from "@/assets/gallery/img-6.jpg";
+import img7 from "@/assets/gallery/img-7.jpg";
+import img8 from "@/assets/gallery/img-8.jpg";
+import img9 from "@/assets/gallery/img-9.jpg";
+import img10 from "@/assets/gallery/img-10.jpg";
+import img11 from "@/assets/gallery/img-11.jpg";
+import img12 from "@/assets/gallery/img-12.jpg";
 
 const GalleryPage = () => {
   const { t, dir, lang } = useLanguage();
@@ -15,12 +25,20 @@ const GalleryPage = () => {
   const [activeCategory, setActiveCategory] = useState("all");
 
   const images = [
-    { src: beforeAfter1, alt: "Tile polishing before and after", category: "beforeAfter" },
-    { src: beforeAfter2, alt: "Marble restoration", category: "beforeAfter" },
-    { src: serviceWork, alt: "Floor polishing equipment", category: "machines" },
-    { src: heroMarble, alt: "Polished marble floor", category: "workInProgress" },
-    { src: serviceWork, alt: "Professional cleaning in progress", category: "workInProgress" },
-    { src: beforeAfter1, alt: "Granite polishing result", category: "beforeAfter" },
+    { src: ba1, alt: "Floor restoration before", category: "beforeAfter" },
+    { src: ba2, alt: "Floor restoration after", category: "beforeAfter" },
+    { src: img1, alt: "Industrial polishing machine", category: "machines" },
+    { src: img2, alt: "Professional floor cleaning equipment", category: "machines" },
+    { src: img3, alt: "Tile restoration machinery", category: "machines" },
+    { src: img4, alt: "Surface preparation tools", category: "machines" },
+    { src: img5, alt: "Marble polishing in progress", category: "workInProgress" },
+    { src: img6, alt: "Technician working on floor", category: "workInProgress" },
+    { src: img7, alt: "Deep cleaning process", category: "workInProgress" },
+    { src: img8, alt: "Surface restoration phase", category: "workInProgress" },
+    { src: img9, alt: "Completed marble floor project", category: "completedProjects" },
+    { src: img10, alt: "Finished tile installation", category: "completedProjects" },
+    { src: img11, alt: "Restored granite surface", category: "completedProjects" },
+    { src: img12, alt: "Luxury floor finishing", category: "completedProjects" },
   ];
 
   const categories = [
@@ -28,6 +46,7 @@ const GalleryPage = () => {
     { key: "beforeAfter", label: t.gallery.categories.beforeAfter },
     { key: "machines", label: t.gallery.categories.machines },
     { key: "workInProgress", label: t.gallery.categories.workInProgress },
+    { key: "completedProjects", label: t.gallery.categories.completedProjects },
   ];
 
   const filtered = activeCategory === "all" ? images : images.filter((img) => img.category === activeCategory);

@@ -9,9 +9,9 @@ import { SERVICE_IMAGES } from "@/data/services";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import heroImage from "@/assets/hero-marble.jpg";
-import beforeAfter1 from "@/assets/before-after-1.jpg";
-import beforeAfter2 from "@/assets/before-after-2.jpg";
-import serviceWork from "@/assets/service-work.jpg";
+import ba1 from "@/assets/gallery/ba-1.jpg";
+import img9 from "@/assets/gallery/img-9.jpg";
+import img11 from "@/assets/gallery/img-11.jpg";
 import GoldParticles from "@/components/GoldParticles";
 import TrustBadges from "@/components/TrustBadges";
 import BeforeAfterSection from "@/components/BeforeAfterSlider";
@@ -128,9 +128,9 @@ const GalleryPreview = () => {
   const { t, dir } = useLanguage();
   const { ref, isVisible } = useScrollAnimation();
   const images = [
-    { src: beforeAfter1, alt: "Tile polishing before and after" },
-    { src: beforeAfter2, alt: "Marble restoration before and after" },
-    { src: serviceWork, alt: "Professional floor polishing" },
+    { src: ba1, alt: "Professional marble restoration before and after" },
+    { src: img9, alt: "Luxury marble floor polishing result" },
+    { src: img11, alt: "Premium granite surface restoration" },
   ];
 
   return (

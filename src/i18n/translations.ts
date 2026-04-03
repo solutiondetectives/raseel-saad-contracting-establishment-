@@ -66,6 +66,7 @@ export const translations = {
         beforeAfter: "Before & After",
         machines: "Equipment",
         workInProgress: "In Progress",
+        completedProjects: "Completed Projects",
       },
     },
     testimonials: {
@@ -180,6 +181,7 @@ export const translations = {
         beforeAfter: "قبل وبعد",
         machines: "المعدات",
         workInProgress: "قيد التنفيذ",
+        completedProjects: "مشاريع مكتملة",
       },
     },
     testimonials: {
