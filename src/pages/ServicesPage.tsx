@@ -23,15 +23,16 @@ const ServicesPage = () => {
         description={t.seo.services.desc}
         keywords={t.seo.services.keywords}
       />
-      <section className="relative h-64 md:h-80 flex items-center justify-center text-center">
+      <section className="relative h-72 md:h-96 flex items-center justify-center text-center">
         <div className="absolute inset-0 bg-hero-gradient" />
-        <div className="relative z-10 px-4">
-          <h1 className="text-4xl md:text-5xl font-bold text-primary-foreground font-heading mb-4">
-            {t.seo.services.h1}
-          </h1>
-          <h2 className="text-xl md:text-2xl text-accent font-semibold">
-            {t.seo.services.h2}
+        <div className="relative z-10 px-4 max-w-4xl mx-auto w-full">
+          <h1 className="sr-only">{t.seo.services.h1}</h1>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary-foreground font-heading mb-3 sm:mb-4 leading-tight">
+            {t.pageHeaders.services}
           </h2>
+          <p className="text-base sm:text-lg md:text-xl text-accent font-semibold px-2">
+            {t.seo.services.h2}
+          </p>
         </div>
       </section>
 

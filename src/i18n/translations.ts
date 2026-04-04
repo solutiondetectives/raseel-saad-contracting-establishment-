@@ -14,6 +14,12 @@ export const translations = {
       cta1: "WhatsApp Now",
       cta2: "Call Now",
     },
+    pageHeaders: {
+      services: "Our Services",
+      about: "About Us",
+      contact: "Contact Us",
+      gallery: "Our Gallery",
+    },
     services: {
       title: "Our Expert Services",
       subtitle: "Delivering unmatched quality in surface restoration and polishing",
@@ -200,6 +206,12 @@ export const translations = {
       subtitle: "خبراء تلميع البلاط والرخام والعمل بالمعدات لتحويل مساحاتكم إلى تحف فنية مذهلة",
       cta1: "احصل على عرض مجاني",
       cta2: "اتصل الآن",
+    },
+    pageHeaders: {
+      services: "خدماتنا",
+      about: "من نحن",
+      contact: "اتصل بنا",
+      gallery: "معرض الأعمال",
     },
     services: {
       title: "خدماتنا المتخصصة",

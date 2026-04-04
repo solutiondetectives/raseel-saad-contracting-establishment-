@@ -9,13 +9,13 @@ import { SERVICE_IMAGES } from "@/data/services";
 const serviceData: Record<string, { en: { title: string; desc: string; steps: string[]; benefits: string[] }; ar: { title: string; desc: string; steps: string[]; benefits: string[] } }> = {
   "tile-polishing": {
     en: {
-      title: "Professional Tile Polishing Services",
+      title: "Tile Polishing",
       desc: "Our expert tile polishing services restore your ceramic, porcelain, and natural stone tiles to their original brilliance. Using advanced diamond polishing techniques, we remove scratches, stains, and dullness to reveal a mirror-like finish that transforms your space.",
       steps: ["Surface inspection & assessment", "Deep cleaning & stain removal", "Diamond grinding & leveling", "Progressive polishing stages", "Sealing & protection coating", "Final quality inspection"],
       benefits: ["Restores original shine and color", "Eliminates deep scratches and stains", "Extends tile lifespan significantly", "Non-toxic, eco-friendly process", "Same-day service available", "Satisfaction guaranteed"],
     },
     ar: {
-      title: "خدمات تلميع البلاط الاحترافية",
+      title: "تلميع البلاط",
       desc: "تستعيد خدمات تلميع البلاط المتخصصة لدينا بريق بلاط السيراميك والبورسلين والحجر الطبيعي. باستخدام تقنيات التلميع الماسي المتقدمة، نزيل الخدوش والبقع والبهتان للكشف عن لمسة نهائية شبيهة بالمرآة.",
       steps: ["فحص وتقييم السطح", "تنظيف عميق وإزالة البقع", "طحن وتسوية ماسي", "مراحل تلميع تدريجية", "طبقة ختم وحماية", "فحص الجودة النهائي"],
       benefits: ["يستعيد اللمعان واللون الأصلي", "يزيل الخدوش والبقع العميقة", "يطيل عمر البلاط بشكل ملحوظ", "عملية غير سامة وصديقة للبيئة", "خدمة في نفس اليوم متاحة", "ضمان الرضا"],
@@ -23,13 +23,13 @@ const serviceData: Record<string, { en: { title: string; desc: string; steps: st
   },
   "marble-polishing": {
     en: {
-      title: "Expert Marble Polishing & Restoration",
+      title: "Marble Polishing",
       desc: "Marble is a symbol of luxury, and our polishing services ensure your marble surfaces maintain their premium appearance. We specialize in restoring dull, etched, and damaged marble to its natural, lustrous beauty.",
       steps: ["Marble condition assessment", "Crack and chip repair", "Honing and grinding", "Multi-stage diamond polishing", "Crystallization treatment", "Protective sealant application"],
       benefits: ["Brings out natural marble veining", "Repairs etch marks and water stains", "Creates a glass-like mirror finish", "Protects against future damage", "Increases property value", "Expert handling of all marble types"],
     },
     ar: {
-      title: "تلميع وترميم الرخام المتخصص",
+      title: "تلميع الرخام",
       desc: "الرخام رمز للفخامة، وخدمات التلميع لدينا تضمن الحفاظ على المظهر الفاخر لأسطح الرخام. نتخصص في استعادة جمال الرخام الباهت والمتضرر إلى بريقه الطبيعي.",
       steps: ["تقييم حالة الرخام", "إصلاح الشقوق والرقائق", "صقل وطحن", "تلميع ماسي متعدد المراحل", "معالجة بالتبلور", "تطبيق مادة مانعة للتسرب"],
       benefits: ["يبرز العروق الطبيعية للرخام", "يصلح علامات التآكل وبقع الماء", "يخلق لمسة نهائية شبيهة بالزجاج", "يحمي من الأضرار المستقبلية", "يزيد من قيمة العقار", "التعامل المتخصص مع جميع أنواع الرخام"],
@@ -37,13 +37,13 @@ const serviceData: Record<string, { en: { title: string; desc: string; steps: st
   },
   "machine-work": {
     en: {
-      title: "Professional Machine Work & Deep Cleaning",
+      title: "Machine Work",
       desc: "Our industrial-grade machines deep clean and restore floors to pristine condition in hours. We use advanced technology to tackle the toughest grime on any surface, ensuring a thorough restoration that manual cleaning can never achieve.",
       steps: ["Surface evaluation & type identification", "Industrial deep cleaning treatment", "Machine scrubbing & grime extraction", "Stain spot treatment with specialized agents", "Restoration polishing & finishing", "Protective sealant application"],
       benefits: ["Removes 99% of embedded dirt and grime", "Cleans deep into surface pores and textures", "Saves time and labor vs manual cleaning", "Uniform, professional results across large areas", "Includes protective coating for longevity", "Suitable for all hard floor types"],
     },
     ar: {
-      title: "العمل بالمعدات الاحترافية والتنظيف العميق",
+      title: "العمل بالمعدات",
       desc: "آلاتنا الصناعية تنظف الأرضيات بعمق وتعيدها إلى حالتها الأصلية في ساعات. نستخدم تقنيات متطورة للتعامل مع أصعب الأوساخ على أي سطح، مما يضمن ترميمًا شاملاً لا يمكن للتنظيف اليدوي تحقيقه أبدًا.",
       steps: ["تقييم السطح وتحديد النوع", "معالجة التنظيف العميق الصناعية", "فرك بالمعدة واستخراج الأوساخ", "معالجة بقع البقع بمواد متخصصة", "تلميع الترميم والتشطيب", "تطبيق مادة مانعة وحماية"],
       benefits: ["يزيل ٩٩٪ من الأوساخ العميقة", "ينظف بعمق في مسام ومجاري السطح", "يوفر الوقت والجهد مقارنة بالتنظيف اليدوي", "نتائج احترافية موحدة في المساحات الكبيرة", "يتضمن طبقة واقية لطول العمر", "مناسب لجميع أنواع الأرضيات الصلبة"],
@@ -51,13 +51,13 @@ const serviceData: Record<string, { en: { title: string; desc: string; steps: st
   },
   "floor-cleaning": {
     en: {
-      title: "Professional Floor Cleaning & Restoration",
+      title: "Floor Cleaning",
       desc: "Comprehensive floor cleaning and restoration for all surface types. Our deep cleaning process removes years of embedded dirt, grime, and stains, breathing new life into your floors.",
       steps: ["Floor type identification", "Pre-treatment application", "Deep extraction cleaning", "Stain spot treatment", "Restoration polishing", "Protective coating"],
       benefits: ["Works on all floor types", "Removes deep-set stains", "Eco-friendly cleaning agents", "Quick drying time", "Improves indoor air quality", "Regular maintenance plans available"],
     },
     ar: {
-      title: "تنظيف وترميم الأرضيات الاحترافي",
+      title: "تنظيف الأرضيات",
       desc: "تنظيف وترميم شامل للأرضيات لجميع أنواع الأسطح. تزيل عملية التنظيف العميق لدينا سنوات من الأوساخ والبقع المترسبة، لتبث حياة جديدة في أرضياتكم.",
       steps: ["تحديد نوع الأرضية", "تطبيق المعالجة المسبقة", "تنظيف الاستخراج العميق", "معالجة بقع البقع", "تلميع الترميم", "طبقة حماية"],
       benefits: ["يعمل على جميع أنواع الأرضيات", "يزيل البقع العميقة", "مواد تنظيف صديقة للبيئة", "وقت تجفيف سريع", "يحسن جودة الهواء الداخلي", "خطط صيانة دورية متاحة"],
@@ -65,13 +65,13 @@ const serviceData: Record<string, { en: { title: string; desc: string; steps: st
   },
   "scratch-removal": {
     en: {
-      title: "Advanced Scratch Removal Services",
+      title: "Scratch Removal",
       desc: "Don't let scratches diminish the beauty of your surfaces. Our advanced scratch removal techniques effectively eliminate surface imperfections on marble, granite, tile, and other natural stones.",
       steps: ["Scratch depth assessment", "Surface preparation", "Progressive grinding", "Fine polishing stages", "Blending and matching", "Protective sealing"],
       benefits: ["Removes light and deep scratches", "Invisible repair results", "Works on multiple surface types", "Preserves original surface color", "Cost-effective vs replacement", "Fast turnaround time"],
     },
     ar: {
-      title: "خدمات إزالة الخدوش المتقدمة",
+      title: "إزالة الخدوش",
       desc: "لا تدع الخدوش تقلل من جمال أسطحكم. تقنيات إزالة الخدوش المتقدمة لدينا تقضي بفعالية على عيوب السطح في الرخام والجرانيت والبلاط والأحجار الطبيعية الأخرى.",
       steps: ["تقييم عمق الخدش", "تحضير السطح", "طحن تدريجي", "مراحل تلميع دقيقة", "مزج ومطابقة", "ختم واقي"],
       benefits: ["يزيل الخدوش الخفيفة والعميقة", "نتائج إصلاح غير مرئية", "يعمل على أنواع أسطح متعددة", "يحافظ على لون السطح الأصلي", "اقتصادي مقارنة بالاستبدال", "وقت تنفيذ سريع"],
@@ -79,13 +79,13 @@ const serviceData: Record<string, { en: { title: string; desc: string; steps: st
   },
   "stairs-cleaning": {
     en: {
-      title: "Professional Stairs Cleaning Services",
+      title: "Stairs Cleaning",
       desc: "Professional stairs cleaning services to remove dirt, stains, and buildup from all types of staircases. We restore cleanliness and improve safety with deep cleaning techniques for marble, tile, and granite stairs.",
       steps: ["Staircase inspection & assessment", "Dust and debris removal", "Deep cleaning with specialized agents", "Stain and scuff mark treatment", "Polishing and restoration", "Anti-slip safety coating"],
       benefits: ["Works on all staircase materials", "Removes stubborn stains and scuffs", "Improves safety with anti-slip treatment", "Restores original appearance", "Eco-friendly cleaning products", "Fast and efficient service"],
     },
     ar: {
-      title: "خدمات تنظيف الدرج الاحترافية",
+      title: "تنظيف الدرج",
       desc: "خدمات احترافية لتنظيف الدرج لإزالة الأوساخ والبقع والتراكمات من جميع أنواع السلالم، مع استعادة النظافة وتحسين السلامة باستخدام تقنيات تنظيف عميقة للدرج الرخامي والبلاط والجرانيت.",
       steps: ["فحص وتقييم الدرج", "إزالة الغبار والحطام", "تنظيف عميق بمواد متخصصة", "معالجة البقع وعلامات الاحتكاك", "تلميع وترميم", "طبقة حماية مضادة للانزلاق"],
       benefits: ["يعمل على جميع مواد الدرج", "يزيل البقع العنيدة وعلامات الاحتكاك", "يحسن السلامة بمعالجة مضادة للانزلاق", "يستعيد المظهر الأصلي", "منتجات تنظيف صديقة للبيئة", "خدمة سريعة وفعالة"],
@@ -121,17 +121,18 @@ const ServiceDetailPage = () => {
         description={seoData?.desc || t.seo.defaultDesc} 
         keywords={seoData?.keywords}
       />
-      <section className="relative h-64 md:h-80 flex items-center justify-center text-center">
+      <section className="relative h-72 md:h-96 flex items-center justify-center text-center">
         {serviceAssets?.hero && <img src={serviceAssets.hero} alt={content.title} className="absolute inset-0 w-full h-full object-cover" />}
         <div className="absolute inset-0 bg-hero-gradient" />
-        <div className="relative z-10 px-4">
-          <h1 className="text-3xl md:text-5xl font-bold text-primary-foreground font-heading mb-4">
-            {seoData?.h1 || content.title}
-          </h1>
+        <div className="relative z-10 px-4 max-w-4xl mx-auto w-full">
+          <h1 className="sr-only">{seoData?.h1 || content.title}</h1>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary-foreground font-heading mb-3 sm:mb-4 leading-tight">
+            {content.title}
+          </h2>
           {seoData?.h2 && (
-            <h2 className="text-lg md:text-xl text-accent font-semibold">
+            <p className="text-base sm:text-lg md:text-xl text-accent font-semibold px-2">
               {seoData.h2}
-            </h2>
+            </p>
           )}
         </div>
       </section>
