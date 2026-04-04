@@ -5,15 +5,16 @@ import { useEffect, useState } from 'react';
 interface SEOProps {
   title?: string;
   description?: string;
+  keywords?: string;
   children?: React.ReactNode;
 }
 
-export const SEO = ({ title, description, children }: SEOProps) => {
+export const SEO = ({ title, description, keywords, children }: SEOProps) => {
   const { lang, t } = useLanguage();
   
   const siteTitle = title || t.seo.defaultTitle;
   const siteDesc = description || t.seo.defaultDesc;
-  const siteKeywords = t.seo.keywords; // Global keywords from translations
+  const siteKeywords = keywords || t.seo.keywords; // Page-specific or Global keywords
   
   // Use state for pathname to ensure it's available client-side without SSR hydration errors
   const [path, setPath] = useState('');

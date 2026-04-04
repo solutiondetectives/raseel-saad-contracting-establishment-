@@ -98,6 +98,16 @@ const ServiceDetailPage = () => {
   const { lang, dir, t, toArabicNumerals } = useLanguage();
   const { ref, isVisible } = useScrollAnimation();
   const data = slug ? serviceData[slug] : null;
+  
+  const seoData = slug ? (
+    slug === 'tile-polishing' ? t.seo.tile :
+    slug === 'marble-polishing' ? t.seo.marble :
+    slug === 'machine-work' ? t.seo.machine :
+    slug === 'floor-cleaning' ? t.seo.cleaning :
+    slug === 'scratch-removal' ? t.seo.scratch :
+    slug === 'stairs-cleaning' ? t.seo.stairs :
+    null
+  ) : null;
 
   if (!data) return <div className="min-h-screen flex items-center justify-center text-foreground">Service not found</div>;
 
@@ -107,13 +117,23 @@ const ServiceDetailPage = () => {
   return (
     <div dir={dir}>
       <SEO 
-        title={slug === 'marble-polishing' ? t.seo.marbleTitle : slug === 'tile-polishing' ? t.seo.tileTitle : `${content.title} | ${t.seo.defaultTitle}`} 
-        description={slug === 'marble-polishing' ? t.seo.marbleDesc : slug === 'tile-polishing' ? t.seo.tileDesc : t.seo.defaultDesc} 
+        title={seoData?.title || `${content.title} | ${t.seo.defaultTitle}`} 
+        description={seoData?.desc || t.seo.defaultDesc} 
+        keywords={seoData?.keywords}
       />
-      <section className="relative h-64 md:h-80 flex items-center justify-center">
+      <section className="relative h-64 md:h-80 flex items-center justify-center text-center">
         {serviceAssets?.hero && <img src={serviceAssets.hero} alt={content.title} className="absolute inset-0 w-full h-full object-cover" />}
         <div className="absolute inset-0 bg-hero-gradient" />
-        <h1 className="relative z-10 text-3xl md:text-5xl font-bold text-primary-foreground font-heading text-center px-4">{content.title}</h1>
+        <div className="relative z-10 px-4">
+          <h1 className="text-3xl md:text-5xl font-bold text-primary-foreground font-heading mb-4">
+            {seoData?.h1 || content.title}
+          </h1>
+          {seoData?.h2 && (
+            <h2 className="text-lg md:text-xl text-accent font-semibold">
+              {seoData.h2}
+            </h2>
+          )}
+        </div>
       </section>
 
       <section className="section-padding bg-background">
@@ -159,11 +179,11 @@ const ServiceDetailPage = () => {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
               <div className="rounded-xl overflow-hidden shadow-premium relative group h-64 md:h-80">
-                {(serviceAssets as any)?.isPair ? (
+                {serviceAssets && 'isPair' in serviceAssets && serviceAssets.isPair ? (
                   <div 
                     className="w-full h-full bg-no-repeat transition-transform duration-500 group-hover:scale-105" 
                     style={{ 
-                      backgroundImage: `url(${serviceAssets?.before})`, 
+                      backgroundImage: `url(${serviceAssets.before})`, 
                       backgroundSize: '200% 100%', 
                       backgroundPosition: 'left center' 
                     }} 
@@ -183,11 +203,11 @@ const ServiceDetailPage = () => {
                 </div>
               </div>
               <div className="rounded-xl overflow-hidden shadow-premium relative group h-64 md:h-80">
-                {(serviceAssets as any)?.isPair ? (
+                {serviceAssets && 'isPair' in serviceAssets && serviceAssets.isPair ? (
                   <div 
                     className="w-full h-full bg-no-repeat transition-transform duration-500 group-hover:scale-105" 
                     style={{ 
-                      backgroundImage: `url(${serviceAssets?.after})`, 
+                      backgroundImage: `url(${serviceAssets.after})`, 
                       backgroundSize: '200% 100%', 
                       backgroundPosition: 'right center' 
                     }} 

@@ -18,11 +18,22 @@ const AboutPage = () => {
 
   return (
     <div dir={dir}>
-      <SEO title={t.seo.aboutTitle} />
+      <SEO 
+        title={t.seo.about.title} 
+        description={t.seo.about.desc}
+        keywords={t.seo.about.keywords}
+      />
       {/* Banner */}
-      <section className="relative h-64 md:h-80 flex items-center justify-center">
+      <section className="relative h-64 md:h-80 flex items-center justify-center text-center">
         <div className="absolute inset-0 bg-hero-gradient" />
-        <h1 className="relative z-10 text-4xl md:text-5xl font-bold text-primary-foreground font-heading">{t.nav.about}</h1>
+        <div className="relative z-10 px-4">
+          <h1 className="text-4xl md:text-5xl font-bold text-primary-foreground font-heading mb-4">
+            {t.seo.about.h1}
+          </h1>
+          <h2 className="text-xl md:text-2xl text-accent font-semibold">
+            {t.seo.about.h2}
+          </h2>
+        </div>
       </section>
 
       {/* Story */}

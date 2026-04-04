@@ -32,10 +32,21 @@ const ContactPage = () => {
 
   return (
     <div dir={dir}>
-      <SEO title={t.seo.contactTitle} description={t.seo.contactDesc} />
-      <section className="relative h-64 md:h-80 flex items-center justify-center">
+      <SEO 
+        title={t.seo.contact.title} 
+        description={t.seo.contact.desc}
+        keywords={t.seo.contact.keywords}
+      />
+      <section className="relative h-64 md:h-80 flex items-center justify-center text-center">
         <div className="absolute inset-0 bg-hero-gradient" />
-        <h1 className="relative z-10 text-4xl md:text-5xl font-bold text-primary-foreground font-heading">{t.nav.contact}</h1>
+        <div className="relative z-10 px-4">
+          <h1 className="text-4xl md:text-5xl font-bold text-primary-foreground font-heading mb-4">
+            {t.seo.contact.h1}
+          </h1>
+          <h2 className="text-xl md:text-2xl text-accent font-semibold">
+            {t.seo.contact.h2}
+          </h2>
+        </div>
       </section>
 
       <section className="section-padding bg-background">

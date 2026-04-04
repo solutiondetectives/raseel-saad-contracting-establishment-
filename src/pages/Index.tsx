@@ -38,9 +38,12 @@ const HeroSection = () => {
             <Star className="w-4 h-4 text-accent" />
             <span className="text-sm font-medium text-accent">★★★★★ Rated Excellence</span>
           </div>
-          <h1 className="text-5xl md:text-6xl lg:text-[3.5rem] font-bold text-primary-foreground dark:text-white leading-[1.5] mb-10 lg:mb-16 font-heading hero-shimmer pb-4">
-            {t.hero.title}
+          <h1 className="text-5xl md:text-6xl lg:text-[3.5rem] font-bold text-primary-foreground dark:text-white leading-[1.5] mb-6 font-heading hero-shimmer pb-4">
+            {t.seo.home.h1}
           </h1>
+          <h2 className="text-xl md:text-2xl text-accent font-semibold mb-6">
+            {t.seo.home.h2}
+          </h2>
           <p className="text-lg md:text-xl text-primary-foreground/80 dark:text-white/80 mb-12 leading-relaxed max-w-xl">
             {t.hero.subtitle}
           </p>
@@ -249,7 +252,11 @@ const Index = () => {
 
   return (
     <>
-      <SEO title={t.seo.homeTitle} description={t.seo.homeDesc}>
+      <SEO 
+        title={t.seo.home.title} 
+        description={t.seo.home.desc}
+        keywords={t.seo.home.keywords}
+      >
         <script type="application/ld+json">
           {JSON.stringify(schema)}
         </script>
