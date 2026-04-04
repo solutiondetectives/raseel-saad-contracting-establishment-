@@ -99,24 +99,24 @@ export const translations = {
     },
     seo: {
       home: {
-        title: "Marble & Tile Polishing Riyadh & Dubai | #1 Floor Restoration Experts",
-        desc: "Transform your floors with the premier marble polishing and tile restoration specialists in Riyadh, Dubai, and Abu Dhabi. 20+ years expertise in mirror-finish polishing and deep restoration.",
-        keywords: "marble polishing riyadh, marble polishing dubai, marble polishing abu dhabi, tile polishing saudi arabia, floor restoration riyadh, tile cleaning dubai, marble restoration experts, floor polishing uae, deep floor cleaning, stone polishing saudia, villa floor polishing",
-        h1: "Premium Marble & Tile Polishing Services in Riyadh & Dubai",
+        title: "Marble & Tile Polishing Riyadh | #1 Floor Restoration Experts",
+        desc: "Transform your floors with the premier marble polishing and tile restoration specialists in Riyadh. 20+ years expertise in mirror-finish polishing and deep restoration.",
+        keywords: "marble polishing riyadh, tile polishing saudi arabia, floor restoration riyadh, tile cleaning riyadh, marble restoration experts, floor polishing riyadh, deep floor cleaning, stone polishing saudia, villa floor polishing",
+        h1: "Premium Marble & Tile Polishing Services in Riyadh",
         h2: "Expert Surface Restoration for Luxury Homes & Commercial Spaces"
       },
       marble: {
-        title: "Marble Polishing Riyadh & Dubai | Expert Marble Restoration",
-        desc: "Professional marble restoration and crystallization in Riyadh and Dubai. We remove scratches, stains, and dullness to restore luxury marble shine. Eco-friendly process.",
-        keywords: "marble polishing riyadh, marble restoration dubai, marble crystallization abu dhabi, marble scratch removal, marble floor shine, marble stain removal, marble cleaning riyadh, professional marble polishers",
+        title: "Marble Polishing Riyadh | Expert Marble Restoration",
+        desc: "Professional marble restoration and crystallization in Riyadh. We remove scratches, stains, and dullness to restore luxury marble shine. Eco-friendly process.",
+        keywords: "marble polishing riyadh, marble restoration riyadh, marble crystallization riyadh, marble scratch removal, marble floor shine, marble stain removal, marble cleaning riyadh, professional marble polishers",
         h1: "Expert Marble Polishing & Restoration Services",
         h2: "Bringing Back the Natural Brilliance of Your Marble Floors",
-        slug: "marble-polishing-riyadh-dubai"
+        slug: "marble-polishing-riyadh"
       },
       tile: {
-        title: "Tile Polishing Riyadh & UAE | Professional Ceramic Cleaning",
-        desc: "High-gloss tile cleaning and restoration in Riyadh, Dubai, and Abu Dhabi. Deep grout cleaning for villas, offices, and commercial spaces. Fast & affordable.",
-        keywords: "tile polishing riyadh, ceramic cleaning dubai, tile restoration abu dhabi, grout cleaning service, porcelain tile polishing, floor tile shine, tile cleaning saudi arabia",
+        title: "Tile Polishing Riyadh | Professional Ceramic Cleaning",
+        desc: "High-gloss tile cleaning and restoration in Riyadh. Deep grout cleaning for villas, offices, and commercial spaces. Fast & affordable.",
+        keywords: "tile polishing riyadh, ceramic cleaning riyadh, tile restoration riyadh, grout cleaning service, porcelain tile polishing, floor tile shine, tile cleaning saudi arabia",
         h1: "Professional Tile Polishing & Cleaning",
         h2: "Deep Cleaning and Restoration for All Types of Tiles",
         slug: "tile-polishing-service"
@@ -130,9 +130,9 @@ export const translations = {
         slug: "machine-floor-work"
       },
       cleaning: {
-        title: "Full Floor Cleaning & Restoration | Riyadh & Dubai",
-        desc: "Comprehensive floor cleaning services for all surface types in Riyadh and UAE. Deep cleaning that revitalizes your living and working spaces.",
-        keywords: "floor cleaning riyadh, floor restoration dubai, deep carpet cleaning, stone floor cleaning, commercial cleaning uae, residential floor care",
+        title: "Full Floor Cleaning & Restoration | Riyadh",
+        desc: "Comprehensive floor cleaning services for all surface types in Riyadh. Deep cleaning that revitalizes your living and working spaces.",
+        keywords: "floor cleaning riyadh, floor restoration riyadh, deep carpet cleaning, stone floor cleaning, commercial cleaning riyadh, residential floor care",
         h1: "Comprehensive Floor Cleaning & Restoration",
         h2: "Revitalizing Your Spaces with Professional Care",
         slug: "floor-cleaning-restoration"
@@ -146,44 +146,44 @@ export const translations = {
         slug: "floor-scratch-removal"
       },
       stairs: {
-        title: "Professional Stairs Cleaning | Riyadh & Abu Dhabi",
-        desc: "Expert stairs cleaning and polishing services in Riyadh and Abu Dhabi. Removing stains and buildup from all types of staircases for safety and beauty.",
-        keywords: "stairs cleaning riyadh, staircase polishing dubai, cleaning marble stairs, stairs maintenance uae, step cleaning experts",
+        title: "Professional Stairs Cleaning | Riyadh",
+        desc: "Expert stairs cleaning and polishing services in Riyadh. Removing stains and buildup from all types of staircases for safety and beauty.",
+        keywords: "stairs cleaning riyadh, staircase polishing riyadh, cleaning marble stairs, stairs maintenance riyadh, step cleaning experts",
         h1: "Expert Stairs & Step Cleaning Services",
         h2: "Restoring Safety and Shine to Every Step",
         slug: "stairs-cleaning-polishing"
       },
       services: {
-        title: "Professional Floor Polishing Services in Riyadh & Dubai | Marble & Tile",
-        desc: "Explore our wide range of premium floor restoration services in Riyadh and UAE. From marble and tile polishing to industrial machine cleaning and scratch removal.",
-        keywords: "floor polishing services, marble restoration riyadh, tile cleaning dubai, granite polishing uae, floor maintenance experts",
+        title: "Professional Floor Polishing Services in Riyadh | Marble & Tile",
+        desc: "Explore our wide range of premium floor restoration services in Riyadh. From marble and tile polishing to industrial machine cleaning and scratch removal.",
+        keywords: "floor polishing services, marble restoration riyadh, tile cleaning riyadh, granite polishing riyadh, floor maintenance experts",
         h1: "Professional Floor Polishing & Restoration Services",
         h2: "Comprehensive Care for All Your Surface Cleaning Needs"
       },
       about: {
-        title: "About Us | Excellence in Floor Restoration - Riyadh & Dubai",
-        desc: "Discover why we are the top choice for floor restoration in Riyadh and Dubai. 20+ years of experience, certified experts, and 100% satisfaction guarantee.",
-        keywords: "best marble polishers riyadh, professional floor restoration company, about raseel saad, floor care experts uae",
+        title: "About Us | Excellence in Floor Restoration - Riyadh",
+        desc: "Discover why we are the top choice for floor restoration in Riyadh. 20+ years of experience, certified experts, and 100% satisfaction guarantee.",
+        keywords: "best marble polishers riyadh, professional floor restoration company, about raseel saad, floor care experts riyadh",
         h1: "20+ Years of Excellence in Surface Restoration",
         h2: "Your Trusted Partner for Premium Floor Care"
       },
       gallery: {
         title: "Floor Polishing Gallery | Before & After Transformations",
-        desc: "View our portfolio of marble polishing, tile cleaning, and floor restoration projects in Riyadh and Dubai. Real results, stunning transformations.",
+        desc: "View our portfolio of marble polishing, tile cleaning, and floor restoration projects in Riyadh. Real results, stunning transformations.",
         keywords: "marble polishing gallery, floor restoration photos, before and after floor cleaning, riyadh marble polish work",
         h1: "Our Work Speaks: Before & After Transformations",
         h2: "Visualizing the Excellence We Bring to Every Project"
       },
       contact: {
         title: "Contact Us | Get a Free Quote for Floor Polishing",
-        desc: "Ready to transform your floors? Contact our experts in Riyadh or Dubai for a free consultation and quote. Marble, tile, and granite specialists.",
-        keywords: "contact marble polishers, floor restoration quote riyadh, hire tile cleaners dubai, marble polishing price uae",
+        desc: "Ready to transform your floors? Contact our experts in Riyadh for a free consultation and quote. Marble, tile, and granite specialists.",
+        keywords: "contact marble polishers, floor restoration quote riyadh, hire tile cleaners riyadh, marble polishing price riyadh",
         h1: "Get In Touch for a Free Consultation",
         h2: "Ready to Revitalize Your Floors? We're Here to Help"
       },
       defaultTitle: "Raseel Saad | Premium Marble & Tile Polishing Riyadh",
-      defaultDesc: "Expert floor restoration and polishing services in Riyadh, Dubai, and Abu Dhabi. Marble, tile, and stone care specialists with 20+ years experience.",
-      keywords: "marble polishing, tile polishing, floor restoration, riyadh, dubai, abu dhabi, professional cleaners, raseel saad"
+      defaultDesc: "Expert floor restoration and polishing services in Riyadh. Marble, tile, and stone care specialists with 20+ years experience.",
+      keywords: "marble polishing, tile polishing, floor restoration, riyadh, professional cleaners, raseel saad"
     },
   },
   ar: {
@@ -286,40 +286,40 @@ export const translations = {
     },
     seo: {
       home: {
-        title: "جلي رخام وتلميع رخام بالرياض ودبي | مؤسسة رسيل سعد — ملوك الأرضيات",
-        desc: "استعد جمال أرضياتك مع أفضل شركة جلي رخام وتلميع رخام في الرياض ودبي وأبوظبي. خبرة تزيد عن ٢٠ سنة في ترميم الرخام، تنظيف السيراميك، والعمل بالمعدات الاحترافية لنتائج مبهرة ولمعان كالمرآة.",
-        keywords: "جلي رخام الرياض, جلي رخام دبي, جلي رخام ابوظبي, تلميع رخام الرياض, شركة جلي رخام, تلميع سيراميك دبي, جلي رخام ابوظبي, تنظيف ارضيات, جلي وتلميع رخام وبلاط, افضل شركة جلي رخام في السعودية, تلميع ارضيات فلل",
-        h1: "أفضل خدمات جلي وتلميع الرخام في الرياض ودبي",
+        title: "جلي رخام وتلميع رخام بالرياض | مؤسسة رسيل سعد — ملوك الأرضيات",
+        desc: "استعد جمال أرضياتك مع أفضل شركة جلي رخام وتلميع رخام في الرياض. خبرة تزيد عن ٢٠ سنة في ترميم الرخام، تنظيف السيراميك، والعمل بالمعدات الاحترافية لنتائج مبهرة ولمعان كالمرآة.",
+        keywords: "جلي رخام الرياض, تلميع رخام الرياض, شركة جلي رخام, تنظيف ارضيات, جلي وتلميع رخام وبلاط, افضل شركة جلي رخام في السعودية, تلميع ارضيات فلل",
+        h1: "أفضل خدمات جلي وتلميع الرخام في الرياض",
         h2: "ترميم احترافي للأرضيات للمنازل الفاخرة والمساحات التجارية"
       },
       marble: {
-        title: "جلي رخام الرياض ودبي | خبير ترميم وتلميع الرخام",
-        desc: "متخصصون في جلي وتلميع الرخام الماسي والكريستال في الرياض ودبي. نزيل الخدوش والبقع ونعيد للرخام بريقه الطبيعي وفخامته. نستخدم أفضل المعدات.",
-        keywords: "جلي رخام الرياض, تلميع رخام دبي, جلي وتلميع رخام بالكريستال, ازالة خدوش الرخام, تلميع رخام ابوظبي, ترميم رخام, شركة جلي رخام احترافية, جلي رخام الماس",
+        title: "جلي رخام الرياض | خبير ترميم وتلميع الرخام",
+        desc: "متخصصون في جلي وتلميع الرخام الماسي والكريستال في الرياض. نزيل الخدوش والبقع ونعيد للرخام بريقه الطبيعي وفخامته. نستخدم أفضل المعدات.",
+        keywords: "جلي رخام الرياض, تلميع رخام الرياض, جلي وتلميع رخام بالكريستال, ازالة خدوش الرخام, ترميم رخام, شركة جلي رخام احترافية, جلي رخام الماس",
         h1: "خدمات جلي وترميم الرخام الاحترافية",
         h2: "نستعيد البريق الطبيعي لأرضيات الرخام الخاصة بك",
-        slug: "جلي-وتلميع-رخام-الرياض-دبي"
+        slug: "جلي-وتلميع-رخام-الرياض"
       },
       tile: {
-        title: "تلميع رخام الرياض والإمارات | تنظيف سيراميك احترافي",
-        desc: "تلميع رخام وسيراميك احترافي في الرياض ودبي وأبوظبي. تنظيف عميق للمفاصل وترميم عالي اللمعان للفلل والمكاتب. خدمة سريعة وبأسعار تنافسية.",
-        keywords: "تلميع رخام الرياض, تنظيف سيراميك دبي, جلي رخام ابوظبي, تنظيف فواصل البلاط, تلميع بورسلين, تلميع سيراميك الارضيات, شركة جلي رخام السعودية",
+        title: "تلميع رخام الرياض | تنظيف سيراميك احترافي",
+        desc: "تلميع رخام وسيراميك احترافي في الرياض. تنظيف عميق للمفاصل وترميم عالي اللمعان للفلل والمكاتب. خدمة سريعة وبأسعار تنافسية.",
+        keywords: "تلميع رخام الرياض, تنظيف سيراميك الرياض, تنظيف فواصل البلاط, تلميع بورسلين, تلميع سيراميك الارضيات, شركة جلي رخام السعودية",
         h1: "تلميع وتنظيف الرخام والسيراميك باحترافية",
         h2: "تنظيف عميق وترميم لجميع أنواع الأرضيات",
         slug: "خدمة-تلميع-البلاط"
       },
       machine: {
-        title: "جلي أرضيات بالمعدات | تنظيف عميق الرياض ودبي",
-        desc: "تنظيف وترميم الأرضيات بالمعدات الصناعية في الرياض ودبي. نتعامل مع أصعب الأوساخ ونعيد أرضيات المستودعات والفلل إلى حالتها الأصلية.",
-        keywords: "جلي ارضيات بالمكائن, تنظيف ارضيات بالمعدات, صيانة ارضيات الرياض, تلميع ارضيات صناعية, شركة تنظيف ارضيات دبي",
+        title: "جلي أرضيات بالمعدات | تنظيف عميق الرياض",
+        desc: "تنظيف وترميم الأرضيات بالمعدات الصناعية في الرياض. نتعامل مع أصعب الأوساخ ونعيد أرضيات المستودعات والفلل إلى حالتها الأصلية.",
+        keywords: "جلي ارضيات بالمكائن, تنظيف ارضيات بالمعدات, صيانة ارضيات الرياض, تلميع ارضيات صناعية, شركة تنظيف ارضيات الرياض",
         h1: "تنظيف أرضيات احترافي بالمعدات الصناعية",
         h2: "تقنيات تنظيف عميق لنتائج مثالية في ترميم الأرضيات",
         slug: "جلي-ارضيات-بالمعدات"
       },
       cleaning: {
-        title: "تنظيف وترميم شامل للأرضيات | الرياض ودبي",
-        desc: "خدمات شاملة لتنظيف وترميم الأرضيات لجميع أنواع الأسطح في الرياض والإمارات. تنظيف عميق يجدد مساحاتكم السكنية والتجارية.",
-        keywords: "تنظيف ارضيات الرياض, ترميم ارضيات دبي, تنظيف سجاد, تنظيف ارضيات حجرية, شركة تنظيف في الامارات, العناية بالأرضيات",
+        title: "تنظيف وترميم شامل للأرضيات | الرياض",
+        desc: "خدمات شاملة لتنظيف وترميم الأرضيات لجميع أنواع الأسطح في الرياض. تنظيف عميق يجدد مساحاتكم السكنية والتجارية.",
+        keywords: "تنظيف ارضيات الرياض, ترميم ارضيات الرياض, تنظيف سجاد, تنظيف ارضيات حجرية, شركة تنظيف في الرياض, العناية بالأرضيات",
         h1: "خدمات شاملة لتنظيف وترميم الأرضيات",
         h2: "نجدد مساحاتكم بعناية احترافية فائقة",
         slug: "تنظيف-وترميم-الارضيات"
@@ -333,44 +333,44 @@ export const translations = {
         slug: "ازالة-خدوش-الارضيات"
       },
       stairs: {
-        title: "تنظيف وتلميع الدرج احترافي | الرياض وأبوظبي",
-        desc: "خدمات احترافية لتنظيف وتلميع السلالم في الرياض وأبوظبي. إزالة البقع والتراكمات من جميع أنواع الدرج لضمان الجمال والسلامة.",
-        keywords: "تنظيف درج الرياض, تلميع سلالم دبي, تنظيف درج رخام, صيانة درج ابوظبي, شركة تنظيف سلالم",
+        title: "تنظيف وتلميع الدرج احترافي | الرياض",
+        desc: "خدمات احترافية لتنظيف وتلميع السلالم في الرياض. إزالة البقع والتراكمات من جميع أنواع الدرج لضمان الجمال والسلامة.",
+        keywords: "تنظيف درج الرياض, تلميع سلالم الرياض, تنظيف درج رخام, صيانة درج الرياض, شركة تنظيف سلالم",
         h1: "خدمات احترافية لتنظيف وتلميع السلالم والدرج",
         h2: "نعيد الجمال والسلامة لكل خطوة",
         slug: "تنظيف-وتلميع-الدرج"
       },
       services: {
-        title: "خدمات جلي الرخام وتلميعه بالرياض ودبي | تلميع وترميم الأرضيات",
-        desc: "استكشف مجموعتنا الواسعة من خدمات ترميم الأرضيات المتميزة في الرياض والإمارات. من جلي الرخام وتلميعه إلى التنظيف بالمعدات الصناعية وإزالة الخدوش.",
-        keywords: "خدمات جلي رخام, ترميم رخام الرياض, تنظيف سيراميك دبي, تلميع جرانيت الامارات, خبراء صيانة الارضيات",
+        title: "خدمات جلي الرخام وتلميعه بالرياض | تلميع وترميم الأرضيات",
+        desc: "استكشف مجموعتنا الواسعة من خدمات ترميم الأرضيات المتميزة في الرياض. من جلي الرخام وتلميعه إلى التنظيف بالمعدات الصناعية وإزالة الخدوش.",
+        keywords: "خدمات جلي رخام, ترميم رخام الرياض, تنظيف سيراميك الرياض, تلميع جرانيت الرياض, خبراء صيانة الارضيات",
         h1: "خدمات جلي وتلميع وترميم الأرضيات الاحترافية",
         h2: "عناية شاملة لجميع احتياجات تنظيف وتلميع الأسطح الخاصة بك"
       },
       about: {
-        title: "من نحن | التميز في ترميم الأرضيات - الرياض ودبي",
-        desc: "اكتشف لماذا نحن الخيار الأول لترميم الأرضيات في الرياض ودبي. خبرة ٢٠ سنة، خبراء معتمدون، وضمان رضا ١٠٠٪.",
+        title: "من نحن | التميز في ترميم الأرضيات - الرياض",
+        desc: "اكتشف لماذا نحن الخيار الأول لترميم الأرضيات في الرياض. خبرة ٢٠ سنة، خبراء معتمدون، وضمان رضا ١٠٠٪.",
         keywords: "افضل ملمعي رخام الرياض, شركة ترميم ارضيات احترافية, عن مؤسسة رسيل سعد, خبراء العناية بالارضيات",
         h1: "أكثر من ٢٠ عاماً من التميز في ترميم الأسطح",
         h2: "شريككم الموثوق للعناية الفائقة بالأرضيات"
       },
       gallery: {
         title: "معرض جلي وتلميع الرخام | تحولات الصور قبل وبعد",
-        desc: "شاهد محفظة أعمالنا في جلي الرخام وتنظيف البلاط ومشاريع ترميم الأرضيات في الرياض ودبي. نتائج حقيقية وتحولات مذهلة.",
+        desc: "شاهد محفظة أعمالنا في جلي الرخام وتنظيف البلاط ومشاريع ترميم الأرضيات في الرياض. نتائج حقيقية وتحولات مذهلة.",
         keywords: "معرض جلي رخام, صور ترميم ارضيات, قبل وبعد تنظيف البلاط, اعمال جلي رخام الرياض",
         h1: "أعمالنا تتحدث: تحولات مذهلة قبل وبعد",
         h2: "نشاهد التميز الذي نقدمه في كل مشروع"
       },
       contact: {
         title: "اتصل بنا | احصل على عرض سعر مجاني لجلي الرخام",
-        desc: "هل أنت مستعد لتحويل أرضياتك؟ تواصل مع خبرائنا في الرياض أو دبي للحصول على استشارة مجانية وعرض سعر. متخصصون في الرخام والبلاط.",
-        keywords: "اتصال بشركة جلي رخام, طلب سعر ترميم ارضيات الرياض, توظيف منظفي بلاط دبي, اسعار جلي الرخام الامارات",
+        desc: "هل أنت مستعد لتحويل أرضياتك؟ تواصل مع خبرائنا في الرياض للحصول على استشارة مجانية وعرض سعر. متخصصون في الرخام والبلاط.",
+        keywords: "اتصال بشركة جلي رخام, طلب سعر ترميم ارضيات الرياض, توظيف منظفي بلاط الرياض, اسعار جلي الرخام الرياض",
         h1: "تواصل معنا للحصول على استشارة مجانية",
         h2: "هل أنت مستعد لتجديد أرضياتك؟ نحن هنا للمساعدة"
       },
       defaultTitle: "مؤسسة رسيل سعد | تلميع وجلي رخام الرياض",
-      defaultDesc: "خدمات احترافية في ترميم وتلميع الأرضيات بالرياض ودبي وأبوظبي. متخصصون في العناية بالرخام والبلاط والحجر مع خبرة ٢٠ سنة.",
-      keywords: "جلي رخام, تلميع رخام, ترميم ارضيات, الرياض, دبي, ابوظبي, تنظيف احترافي, مؤسسة رسيل سعد"
+      defaultDesc: "خدمات احترافية في ترميم وتلميع الأرضيات بالرياض. متخصصون في العناية بالرخام والبلاط والحجر مع خبرة ٢٠ سنة.",
+      keywords: "جلي رخام, تلميع رخام, ترميم ارضيات, الرياض, تنظيف احترافي, مؤسسة رسيل سعد"
     },
   },
 } as const;
